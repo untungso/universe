@@ -5,5 +5,14 @@ interface ButtonProps {
 }
 
 export const Button = (props: ButtonProps): React.ReactElement => {
-  return <button>{props.children}</button>;
+  return (
+    <button
+      style={{
+        padding: `4px 16px`,
+        border: `2px solid black`,
+      }}
+    >
+      {props.children}
+    </button>
+  );
 };
