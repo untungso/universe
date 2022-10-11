@@ -21,6 +21,6 @@
     "@vitejs/plugin-react": "^2.1.0",
     "typescript": "^4.6.4",
     "vite": "^3.1.6",
-    "tsconfig": "workspace:0.0.0"
+    "@instead/tsconfig": "workspace:0.0.0"
   }
 }

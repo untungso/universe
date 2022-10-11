@@ -1,5 +1,5 @@
 {
-  "extends": "tsconfig/vite.json",
+  "extends": "@instead/tsconfig/vite.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }

@@ -4,23 +4,23 @@ importers:
 
   .:
     specifiers:
-      eslint-config-custom: workspace:0.0.0
+      '@instead/eslint-config': workspace:0.0.0
       prettier: ^2.7.1
       turbo: ^1.5.6
     devDependencies:
-      eslint-config-custom: link:packages/eslint-config-custom
+      '@instead/eslint-config': link:packages/eslint-config-instead
       prettier: 2.7.1
       turbo: 1.5.6
 
   apps/cockpit:
     specifiers:
       '@instead/facades': workspace:0.0.0
+      '@instead/tsconfig': workspace:0.0.0
       '@types/react': ^18.0.21
       '@types/react-dom': ^18.0.6
       '@vitejs/plugin-react': ^2.1.0
       react: ^18.2.0
       react-dom: ^18.2.0
-      tsconfig: workspace:0.0.0
       typescript: ^4.6.4
       vite: ^3.1.6
     dependencies:
@@ -28,26 +28,26 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
+      '@instead/tsconfig': link:../../packages/tsconfig-instead
       '@types/react': 18.0.21
       '@types/react-dom': 18.0.6
       '@vitejs/plugin-react': 2.1.0_vite@3.1.7
-      tsconfig: link:../../packages/tsconfig
       typescript: 4.8.4
       vite: 3.1.7
 
   apps/spaces:
     specifiers:
       '@babel/core': ^7.19.3
+      '@instead/eslint-config': workspace:0.0.0
       '@instead/facades': workspace:0.0.0
+      '@instead/tsconfig': workspace:0.0.0
       '@types/node': ^17.0.45
       '@types/react': 18.0.17
       eslint: 7.32.0
-      eslint-config-custom: workspace:0.0.0
       next: 12.3.1
       next-transpile-modules: 9.0.0
       react: 18.2.0
       react-dom: 18.2.0
-      tsconfig: workspace:0.0.0
       typescript: ^4.8.4
     dependencies:
       '@instead/facades': link:../../packages/facades
@@ -56,15 +56,15 @@ importers:
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
       '@babel/core': 7.19.3
+      '@instead/eslint-config': link:../../packages/eslint-config-instead
+      '@instead/tsconfig': link:../../packages/tsconfig-instead
       '@types/node': 17.0.45
       '@types/react': 18.0.17
       eslint: 7.32.0
-      eslint-config-custom: link:../../packages/eslint-config-custom
       next-transpile-modules: 9.0.0
-      tsconfig: link:../../packages/tsconfig
       typescript: 4.8.4
 
-  packages/eslint-config-custom:
+  packages/eslint-config-instead:
     specifiers:
       eslint: ^7.32.0
       eslint-config-next: ^12.3.1
@@ -83,23 +83,23 @@ importers:
 
   packages/facades:
     specifiers:
+      '@instead/eslint-config': workspace:0.0.0
+      '@instead/tsconfig': workspace:0.0.0
       '@types/react': ^18.0.21
       '@types/react-dom': ^18.0.6
       eslint: ^7.32.0
-      eslint-config-custom: workspace:0.0.0
       react: ^18.2.0
-      tsconfig: workspace:0.0.0
       typescript: ^4.8.4
     devDependencies:
+      '@instead/eslint-config': link:../eslint-config-instead
+      '@instead/tsconfig': link:../tsconfig-instead
       '@types/react': 18.0.21
       '@types/react-dom': 18.0.6
       eslint: 7.32.0
-      eslint-config-custom: link:../eslint-config-custom
       react: 18.2.0
-      tsconfig: link:../tsconfig
       typescript: 4.8.4
 
-  packages/tsconfig:
+  packages/tsconfig-instead:
     specifiers: {}
 
 packages:
