@@ -1,7 +1,7 @@
 /**
  */
-import { getSession } from 'next-auth/react';
-import { microService } from '@utils/service';
+import { getSession } from "next-auth/react";
+import { microService } from "@utils/service";
 /**
  */
 interface GetProfileDetailsRequest {
@@ -21,7 +21,7 @@ interface GetProfileDetailsResponse {
   };
 }
 export const getProfileDetails = async (
-  req: GetProfileDetailsRequest,
+  req: GetProfileDetailsRequest
 ): Promise<GetProfileDetailsResponse> => {
   return await microService
     .post(`getProfileDetails`, {
@@ -52,7 +52,7 @@ interface UpdateProfileDetailsResponse {
   };
 }
 export const updateProfileDetails = async (
-  req: UpdateProfileDetailsRequest,
+  req: UpdateProfileDetailsRequest
 ): Promise<UpdateProfileDetailsResponse> => {
   const session = await getSession();
   return await microService

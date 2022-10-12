@@ -1,8 +1,8 @@
 /**
  */
-import CryptoJs from 'crypto-js';
-import { microService } from '@utils/service';
-import { privateInsteadToken } from '@config/application';
+import CryptoJs from "crypto-js";
+import { microService } from "@utils/service";
+import { privateInsteadToken } from "@config/application";
 /**
  */
 interface IssueMicrosTokenRequest {
@@ -21,11 +21,11 @@ interface IssueMicrosTokenResponse {
   };
 }
 export const issueMicrosToken = async (
-  req: IssueMicrosTokenRequest,
+  req: IssueMicrosTokenRequest
 ): Promise<IssueMicrosTokenResponse> => {
   const ciphertext = CryptoJs.AES.encrypt(
     req.identification,
-    privateInsteadToken as string,
+    privateInsteadToken as string
   ).toString();
   return await microService
     .post(`api/auth/token`, {

@@ -1,10 +1,10 @@
 /**
  */
-import { Fragment, useEffect, useState } from 'react';
-import { GearIcon, MoonIcon, SunIcon } from '@radix-ui/react-icons';
-import type { ReactElement } from 'react';
-import { SmallButton } from '@components/button/base';
-import { useTheme } from 'next-themes';
+import { Fragment, useEffect, useState } from "react";
+import { GearIcon, MoonIcon, SunIcon } from "@radix-ui/react-icons";
+import type { ReactElement } from "react";
+import { SmallButton } from "@components/button/base";
+import { useTheme } from "next-themes";
 /**
  */
 const ThemeSwitcher = (): ReactElement => {
@@ -17,27 +17,27 @@ const ThemeSwitcher = (): ReactElement => {
 
   const loadComponent = (theme: string | undefined) => {
     switch (theme) {
-      case 'light':
+      case "light":
         return (
-          <SmallButton onClick={() => setTheme('system')}>
+          <SmallButton onClick={() => setTheme("system")}>
             <SunIcon />
           </SmallButton>
         );
-      case 'dark':
+      case "dark":
         return (
-          <SmallButton onClick={() => setTheme('light')}>
+          <SmallButton onClick={() => setTheme("light")}>
             <MoonIcon />
           </SmallButton>
         );
-      case 'system':
+      case "system":
         return (
-          <SmallButton onClick={() => setTheme('dark')}>
+          <SmallButton onClick={() => setTheme("dark")}>
             <GearIcon />
           </SmallButton>
         );
       default:
         return (
-          <SmallButton onClick={() => setTheme('dark')}>
+          <SmallButton onClick={() => setTheme("dark")}>
             <GearIcon />
           </SmallButton>
         );

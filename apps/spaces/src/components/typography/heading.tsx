@@ -1,7 +1,7 @@
 /**
  */
-import { styledHeading, styledSubHeading } from './heading.css';
-import { ReactElement } from 'react';
+import { styledHeading, styledSubHeading } from "./heading.css";
+import { ReactElement } from "react";
 /**
  *
  */

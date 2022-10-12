@@ -5,13 +5,13 @@ import {
   styledSocialMediaLink,
   styledSocialMediaWrapper,
   styledWall,
-} from './footer.css';
-import { ExternalLinkIcon } from '@radix-ui/react-icons';
-import { InsteadLocale } from '@modules/i18n';
-import { Paragraph } from '@components/typography/paragraph';
-import type { ReactElement } from 'react';
-import { getCurrentYear } from '@utils/index';
-import { useI18n } from 'next-rosetta';
+} from "./footer.css";
+import { ExternalLinkIcon } from "@radix-ui/react-icons";
+import { InsteadLocale } from "@modules/i18n";
+import { Paragraph } from "@components/typography/paragraph";
+import type { ReactElement } from "react";
+import { getCurrentYear } from "@utils/index";
+import { useI18n } from "next-rosetta";
 
 export const Footer = (): ReactElement => {
   const { t } = useI18n<InsteadLocale>();

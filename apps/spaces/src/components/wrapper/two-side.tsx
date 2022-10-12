@@ -1,7 +1,7 @@
 /**
  */
-import { styledMain, styledSide, styledTwoSide } from './two-side.css';
-import { ReactElement } from 'react';
+import { styledMain, styledSide, styledTwoSide } from "./two-side.css";
+import { ReactElement } from "react";
 /**
  *
  */

@@ -1,7 +1,7 @@
 /**
  */
-import { ReactElement } from 'react';
-import { styledContainer } from './container.css';
+import { ReactElement } from "react";
+import { styledContainer } from "./container.css";
 /**
  *
  */

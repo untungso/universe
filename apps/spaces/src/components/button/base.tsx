@@ -4,8 +4,8 @@ import {
   styledBaseAltButton,
   styledBaseButton,
   styledBaseButtonSmall,
-} from './base.css';
-import type { ReactElement } from 'react';
+} from "./base.css";
+import type { ReactElement } from "react";
 
 interface ButtonProps {
   children: ReactElement | ReactElement[] | string;

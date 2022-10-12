@@ -1,7 +1,7 @@
 /**
  */
-import { sprinkles } from '@styles/sprinkles.css';
-import { style } from '@vanilla-extract/css';
+import { sprinkles } from "@styles/sprinkles.css";
+import { style } from "@vanilla-extract/css";
 /**
  *
  */
@@ -10,7 +10,7 @@ export const styledHeading = style([
     fontSize: `largest`,
     fontWeight: 900,
     marginTop: `large`,
-    fontFamily: 'sans',
+    fontFamily: "sans",
   }),
 ]);
 
@@ -19,6 +19,6 @@ export const styledSubHeading = style([
     fontSize: `larger`,
     fontWeight: 700,
     marginY: `small`,
-    fontFamily: 'sans',
+    fontFamily: "sans",
   }),
 ]);

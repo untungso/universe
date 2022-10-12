@@ -1,17 +1,17 @@
 /**
  */
-import { createSprinkles, defineProperties } from '@vanilla-extract/sprinkles';
-import { vars } from './theme/index.css';
+import { createSprinkles, defineProperties } from "@vanilla-extract/sprinkles";
+import { vars } from "./theme/index.css";
 /**
  */
 const responsiveProperties = defineProperties({
   conditions: {
     mobile: {},
-    tablet: { '@media': 'screen and (min-width: 768px)' },
-    desktop: { '@media': 'screen and (min-width: 992px)' },
-    largescreen: { '@media': 'screen and (min-width: 1200px)' },
+    tablet: { "@media": "screen and (min-width: 768px)" },
+    desktop: { "@media": "screen and (min-width: 992px)" },
+    largescreen: { "@media": "screen and (min-width: 1200px)" },
   },
-  defaultCondition: 'mobile',
+  defaultCondition: "mobile",
   properties: {
     top: vars.space,
     bottom: vars.space,

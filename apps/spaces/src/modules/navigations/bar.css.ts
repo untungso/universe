@@ -1,8 +1,8 @@
 /**
  */
-import { sprinkles } from '@styles/sprinkles.css';
-import { style } from '@vanilla-extract/css';
-import { vars } from '@styles/theme/index.css';
+import { sprinkles } from "@styles/sprinkles.css";
+import { style } from "@vanilla-extract/css";
+import { vars } from "@styles/theme/index.css";
 /**
  */
 export const styledNavbar = style([
@@ -68,7 +68,7 @@ export const styledNavLink = style([
   }),
   {
     borderColor: vars.bluePrint.color.slate6,
-    ':hover': {
+    ":hover": {
       cursor: `pointer`,
       borderBottom: `0.1875rem solid ${vars.bluePrint.color.slate10}`,
     },

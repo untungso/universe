@@ -1,11 +1,11 @@
 /**
  */
-import { Heading, SubHeading } from '@components/typography/heading';
-import { heroTitle, heroVideo, styledHero } from './hero.css';
-import { Fragment } from 'react';
-import Image from 'next/image';
-import type { ReactElement } from 'react';
-import { numberGenerator } from '@utils/number-generator';
+import { Heading, SubHeading } from "@components/typography/heading";
+import { heroTitle, heroVideo, styledHero } from "./hero.css";
+import { Fragment } from "react";
+import Image from "next/image";
+import type { ReactElement } from "react";
+import { numberGenerator } from "@utils/number-generator";
 
 interface HeroInterface {
   title: string;

@@ -1,13 +1,13 @@
 /*
  */
-import type { GetStaticProps, NextPage } from 'next';
-import { I18nProps, useI18n } from 'next-rosetta';
-import { BaseLayout } from '@layouts/base';
-import { Button } from '@components/button/base';
-import type { InsteadLocale } from '@modules/i18n';
-import { Paragraph } from '@components/typography/paragraph';
-import dynamic from 'next/dynamic';
-import { useCookiesPersist } from '@modules/cookies/cookie-consent.store';
+import type { GetStaticProps, NextPage } from "next";
+import { I18nProps, useI18n } from "next-rosetta";
+import { BaseLayout } from "@layouts/base";
+import { Button } from "@components/button/base";
+import type { InsteadLocale } from "@modules/i18n";
+import { Paragraph } from "@components/typography/paragraph";
+import dynamic from "next/dynamic";
+import { useCookiesPersist } from "@modules/cookies/cookie-consent.store";
 /*
  *
  */
@@ -20,7 +20,7 @@ const LocaleSwitcherLazy = dynamic(
         <Paragraph>Loading..</Paragraph>
       </div>
     ),
-  },
+  }
 );
 const ThemeSwitcherLazy = dynamic(
   (): any => import(`@modules/shared/theme-switcher`),
@@ -31,7 +31,7 @@ const ThemeSwitcherLazy = dynamic(
         <Paragraph>Loading..</Paragraph>
       </div>
     ),
-  },
+  }
 );
 const ServicePingLazy = dynamic((): any => import(`@modules/shared/ping`), {
   ssr: false,
@@ -69,7 +69,7 @@ export const ExperimentsPage: NextPage = (props: any) => {
 };
 
 export const getStaticProps: GetStaticProps<I18nProps<InsteadLocale>> = async (
-  context,
+  context
 ) => {
   const locale = context.locale || context.defaultLocale;
   const { table = {} } = await import(`@modules/i18n/${locale}`);

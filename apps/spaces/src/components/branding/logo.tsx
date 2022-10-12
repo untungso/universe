@@ -2,8 +2,8 @@
  *
  */
 
-import Image from 'next/image';
-import type { ReactElement } from 'react';
+import Image from "next/image";
+import type { ReactElement } from "react";
 
 interface LogoProps {
   size?: number;

@@ -1,6 +1,6 @@
-import { sprinkles } from '@styles/sprinkles.css';
-import { style } from '@vanilla-extract/css';
-import { vars } from '@styles/theme/index.css';
+import { sprinkles } from "@styles/sprinkles.css";
+import { style } from "@vanilla-extract/css";
+import { vars } from "@styles/theme/index.css";
 
 const altImage = `/static/images/camps-instead.webp`;
 
@@ -30,17 +30,17 @@ export const styledLeft = style([
     backgroundRepeat: `no-repeat`,
     backgroundSize: `cover`,
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("${altImage}")`,
-    '@media': {
-      'screen and (min-width: 0px)': {
+    "@media": {
+      "screen and (min-width: 0px)": {
         width: `16px`,
       },
-      'screen and (min-width: 768px)': {
+      "screen and (min-width: 768px)": {
         width: `32px`,
       },
-      'screen and (min-width: 992px)': {
+      "screen and (min-width: 992px)": {
         width: `120px`,
       },
-      'screen and (min-width: 1200px)': {
+      "screen and (min-width: 1200px)": {
         width: `380px`,
       },
     },
@@ -56,17 +56,17 @@ export const styledRight = style([
     },
   }),
   {
-    '@media': {
-      'screen and (min-width: 0px)': {
+    "@media": {
+      "screen and (min-width: 0px)": {
         width: `calc(100vw - 16px)`,
       },
-      'screen and (min-width: 768px)': {
+      "screen and (min-width: 768px)": {
         width: `calc(100vw - 32px)`,
       },
-      'screen and (min-width: 992px)': {
+      "screen and (min-width: 992px)": {
         width: `calc(100vw - 120px)`,
       },
-      'screen and (min-width: 1200px)': {
+      "screen and (min-width: 1200px)": {
         width: `calc(100vw - 380px)`,
       },
     },

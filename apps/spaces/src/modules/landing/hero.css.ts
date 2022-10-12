@@ -1,8 +1,8 @@
 /**
  */
-import { sprinkles } from '@styles/sprinkles.css';
-import { style } from '@vanilla-extract/css';
-import { vars } from '@styles/theme/index.css';
+import { sprinkles } from "@styles/sprinkles.css";
+import { style } from "@vanilla-extract/css";
+import { vars } from "@styles/theme/index.css";
 /**
  */
 export const styledHero = style([
@@ -46,11 +46,11 @@ export const heroTitle = style([
     alignItems: `flex-start`,
   }),
   {
-    '@media': {
-      'screen and (min-width: 0px)': {
+    "@media": {
+      "screen and (min-width: 0px)": {
         backgroundImage: `linear-gradient(to right, ${vars.bluePrint.transparent.left} 0% 100%, ${vars.bluePrint.transparent.right})`,
       },
-      'screen and (min-width: 768px)': {
+      "screen and (min-width: 768px)": {
         backgroundImage: `linear-gradient(to right, ${vars.bluePrint.transparent.left}, ${vars.bluePrint.transparent.right})`,
       },
     },

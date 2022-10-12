@@ -1,5 +1,5 @@
-import create from 'zustand';
-import { persist } from 'zustand/middleware';
+import create from "zustand";
+import { persist } from "zustand/middleware";
 
 type CookiesState = {
   showCookiesModal: boolean;
@@ -32,6 +32,6 @@ export const useCookiesPersist = create<CookiesState & CookiesAction>()(
         set(initialState);
       },
     }),
-    { name: `instead-cookies` },
-  ),
+    { name: `instead-cookies` }
+  )
 );

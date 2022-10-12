@@ -1,6 +1,6 @@
-import { createGlobalTheme, createThemeContract } from '@vanilla-extract/css';
+import { createGlobalTheme, createThemeContract } from "@vanilla-extract/css";
 
-export const bluePrint = createThemeContract({
+export const bluePrint: any = createThemeContract({
   color: {
     slate1: ``,
     slate2: ``,
@@ -21,7 +21,7 @@ export const bluePrint = createThemeContract({
   },
 });
 
-export const globalTheme = createGlobalTheme(`:root`, {
+export const globalTheme: any = createGlobalTheme(`:root`, {
   family: {
     mono: `'NectoMono', monospace`,
     sans: `'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif`,

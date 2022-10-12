@@ -3,9 +3,9 @@
 import {
   pingFilamentsService,
   pingMicrosService,
-} from '@services/ping-adapter';
-import { Button } from '@components/button/base';
-import type { ReactElement } from 'react';
+} from "@services/ping-adapter";
+import { Button } from "@components/button/base";
+import type { ReactElement } from "react";
 /**
  */
 const Ping = (): ReactElement => {

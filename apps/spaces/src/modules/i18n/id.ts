@@ -1,13 +1,13 @@
-import type { InsteadLocale } from '.';
-import { publicApplicationName } from '@config/application';
+import type { InsteadLocale } from ".";
+import { publicApplicationName } from "@config/application";
 
 export const table: InsteadLocale = {
-  locale: 'Indonesia',
+  locale: "Indonesia",
   title: `Hello World, Selamat Datang di`,
-  subTitle: 'Dunia Malah Ngoding 🌐',
-  welcome: 'Selamat Datang {{name}}! 😃',
+  subTitle: "Dunia Malah Ngoding 🌐",
+  welcome: "Selamat Datang {{name}}! 😃",
   profile: {
-    button: 'Tekan Aku!',
+    button: "Tekan Aku!",
   },
   auth: {
     connect: `Bergabung`,

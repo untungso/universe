@@ -10,7 +10,7 @@ interface InsteadErrorResponse {
 }
 export const generalErrorResponseBuilder = (
   messages: string,
-  error: unknown,
+  error: unknown
 ): InsteadErrorResponse => {
   return {
     messages: messages,

@@ -1,13 +1,13 @@
 /*
  */
-import type { GetStaticProps, NextPage } from 'next';
-import { Heading, SubHeading } from '@components/typography/heading';
-import { I18nProps, useI18n } from 'next-rosetta';
-import { BaseLayout } from '@layouts/base';
-import { Container } from '@components/wrapper/container';
-import type { InsteadLocale } from '@modules/i18n';
-import { Paragraph } from '@components/typography/paragraph';
-import { TwoSide } from '@components/wrapper/two-side';
+import type { GetStaticProps, NextPage } from "next";
+import { Heading, SubHeading } from "@components/typography/heading";
+import { I18nProps, useI18n } from "next-rosetta";
+import { BaseLayout } from "@layouts/base";
+import { Container } from "@components/wrapper/container";
+import type { InsteadLocale } from "@modules/i18n";
+import { Paragraph } from "@components/typography/paragraph";
+import { TwoSide } from "@components/wrapper/two-side";
 /**
  */
 export const AboutUsPage: NextPage = (props: any) => {
@@ -29,8 +29,8 @@ export const AboutUsPage: NextPage = (props: any) => {
       <TwoSide
         sideChildren={
           <Container>
-            <Heading>{t('title')}</Heading>
-            <SubHeading>{t('title')}</SubHeading>
+            <Heading>{t("title")}</Heading>
+            <SubHeading>{t("title")}</SubHeading>
           </Container>
         }
       >
@@ -39,8 +39,8 @@ export const AboutUsPage: NextPage = (props: any) => {
             {Array.from(Array(2).keys()).map((item: number) => {
               return (
                 <div key={item} style={{ marginRight: `1em` }}>
-                  <Heading>{t('title')}</Heading>
-                  <SubHeading>{t('title')}</SubHeading>
+                  <Heading>{t("title")}</Heading>
+                  <SubHeading>{t("title")}</SubHeading>
                   <>
                     {wallOfText.map((item) => {
                       return <Paragraph key={item}>{item}</Paragraph>;
@@ -57,7 +57,7 @@ export const AboutUsPage: NextPage = (props: any) => {
 };
 
 export const getStaticProps: GetStaticProps<I18nProps<InsteadLocale>> = async (
-  context,
+  context
 ) => {
   const locale = context.locale || context.defaultLocale;
   const { table = {} } = await import(`@modules/i18n/${locale}`);

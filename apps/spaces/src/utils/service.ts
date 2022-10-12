@@ -1,15 +1,16 @@
 /**
  */
-import { publicFIlamentsUrl, publicMicrosUrl } from '@config/application';
-import ky from 'ky-universal';
+import { publicFIlamentsUrl, publicMicrosUrl } from "@config/application";
+import type { KyInstance } from "ky/distribution/types/ky";
+import ky from "ky-universal";
 /**
  */
-export const microService = ky
+export const microService: KyInstance = ky
   .create({
     prefixUrl: publicMicrosUrl,
     headers: {
-      'X-Requested-With': 'XMLHttpRequest',
-      'X-Requested-From': 'instead-spaces',
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Requested-From": "instead-spaces",
     },
   })
   .extend({
@@ -17,12 +18,12 @@ export const microService = ky
   });
 /**
  */
-export const filamentService = ky
+export const filamentService: KyInstance = ky
   .create({
     prefixUrl: publicFIlamentsUrl,
     headers: {
-      'X-Requested-With': 'XMLHttpRequest',
-      'X-Requested-From': 'instead-spaces',
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Requested-From": "instead-spaces",
     },
   })
   .extend({

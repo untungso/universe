@@ -5,14 +5,14 @@ import {
   privateGoogleSecret,
   privateJwtSecret,
   publicApplicationUrl,
-} from '@config/application';
-import CredentialsProvider from 'next-auth/providers/credentials';
-import GithubProvider from 'next-auth/providers/github';
-import GoogleProvider from 'next-auth/providers/google';
-import NextAuth from 'next-auth';
-import { ethers } from 'ethers';
-import { getProfileDetails } from '@services/profile-adapter';
-import { issueMicrosToken } from '@services/auth-adapter';
+} from "@config/application";
+import CredentialsProvider from "next-auth/providers/credentials";
+import GithubProvider from "next-auth/providers/github";
+import GoogleProvider from "next-auth/providers/google";
+import NextAuth from "next-auth";
+import { ethers } from "ethers";
+import { getProfileDetails } from "@services/profile-adapter";
+import { issueMicrosToken } from "@services/auth-adapter";
 
 export default NextAuth({
   secret: privateJwtSecret,
@@ -22,22 +22,22 @@ export default NextAuth({
   },
   providers: [
     CredentialsProvider({
-      name: 'Credentials',
+      name: "Credentials",
       credentials: {
-        address: { label: 'Address', type: 'text' },
-        signer: { label: 'Signer', type: 'text' },
-        signature: { label: 'Signature', type: 'text' },
-        network: { label: 'Network', type: 'text' },
+        address: { label: "Address", type: "text" },
+        signer: { label: "Signer", type: "text" },
+        signature: { label: "Signature", type: "text" },
+        network: { label: "Network", type: "text" },
       },
       async authorize(credentials, req) {
         switch (credentials?.network) {
-          case 'evm':
+          case "evm":
             const message = [
               `I have read and accept the terms and condition`,
               `for this website ${publicApplicationUrl}`,
               `Please sign me in!`,
-            ].join('\n');
-            const signature = credentials?.signature || '';
+            ].join("\n");
+            const signature = credentials?.signature || "";
             const verified = ethers.utils.verifyMessage(message, signature);
 
             if (
@@ -51,7 +51,7 @@ export default NextAuth({
               };
             }
             return null;
-          case 'hedera':
+          case "hedera":
             return {
               name: `${credentials?.address.toString()}`,
               email: `${credentials?.address}@`,
@@ -73,9 +73,9 @@ export default NextAuth({
   ],
   callbacks: {
     async signIn({ user, account, profile, email, credentials }) {
-      if (account.provider === 'credentials') {
+      if (account.provider === "credentials") {
         let wallet;
-        if (credentials?.network === 'evm') {
+        if (credentials?.network === "evm") {
           wallet = `METAMASK`;
         } else {
           wallet = `HASHPACK`;
@@ -95,7 +95,7 @@ export default NextAuth({
       if (account.provider === `github`) {
         const responseMicros = await issueMicrosToken({
           identification: account.providerAccountId,
-          provider: 'GITHUB',
+          provider: "GITHUB",
           name: profile?.name || ``,
           email: profile?.email || ``,
         });
@@ -105,7 +105,7 @@ export default NextAuth({
       if (account.provider === `google`) {
         const responseMicros = await issueMicrosToken({
           identification: account.providerAccountId,
-          provider: 'GOOGLE',
+          provider: "GOOGLE",
           name: profile?.name || ``,
           email: profile?.email || ``,
         });
@@ -115,7 +115,7 @@ export default NextAuth({
       return false;
     },
     async redirect({ url, baseUrl }) {
-      if (url.startsWith('/')) return new URL(url, baseUrl).toString();
+      if (url.startsWith("/")) return new URL(url, baseUrl).toString();
       else if (new URL(url).origin === baseUrl) return url;
       return baseUrl;
     },

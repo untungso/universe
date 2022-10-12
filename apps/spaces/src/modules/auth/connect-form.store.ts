@@ -1,5 +1,5 @@
-import create from 'zustand';
-import { persist } from 'zustand/middleware';
+import create from "zustand";
+import { persist } from "zustand/middleware";
 
 type ConnectFormState = {
   showCookiesModal: boolean;
@@ -32,6 +32,6 @@ export const useCookiesPersist = create<ConnectFormState & ConnectFormAction>()(
         set(initialState);
       },
     }),
-    { name: `instead-cookies` },
-  ),
+    { name: `instead-cookies` }
+  )
 );

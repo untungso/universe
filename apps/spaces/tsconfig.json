@@ -1,8 +1,6 @@
 {
-  "extends": "@instead/tsconfig/nextjs.json",
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"],
   "compilerOptions": {
+    "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
       "@artifacts/*": ["./artifacts/*"],
@@ -17,5 +15,8 @@
       "@modules/*": ["./src/modules/*"],
       "@public/*": ["./public/*"]
     }
-  }
+  },
+  "extends": "@instead/tsconfig/nextjs.json",
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }

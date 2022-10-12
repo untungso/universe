@@ -1,5 +1,5 @@
-import { filamentService, microService } from '@utils/service';
-import { generalErrorResponseBuilder } from '.';
+import { filamentService, microService } from "@utils/service";
+import { generalErrorResponseBuilder } from ".";
 
 interface PingServiceResponse {
   messages: string;

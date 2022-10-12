@@ -2,9 +2,9 @@
  *
  */
 
-import { PersonIcon } from '@radix-ui/react-icons';
-import { ReactElement } from 'react';
-import { styledAvatar } from './avatar.css';
+import { PersonIcon } from "@radix-ui/react-icons";
+import { ReactElement } from "react";
+import { styledAvatar } from "./avatar.css";
 /**
  *
  */

@@ -1,7 +1,7 @@
 /**
  */
-import { ReactElement } from 'react';
-import { styledParagraph } from './paragraph.css';
+import { ReactElement } from "react";
+import { styledParagraph } from "./paragraph.css";
 /**
  *
  */

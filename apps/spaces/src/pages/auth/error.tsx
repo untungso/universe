@@ -1,7 +1,7 @@
 /**
  *
  */
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
 function AuthErrorPage() {
   const router = useRouter();

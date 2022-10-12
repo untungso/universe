@@ -1,9 +1,9 @@
 /**
  */
-import type { GetStaticProps, NextPage } from 'next';
-import { BaseLayout } from '@layouts/base';
-import { I18nProps } from 'next-rosetta';
-import type { InsteadLocale } from '@modules/i18n';
+import type { GetStaticProps, NextPage } from "next";
+import { BaseLayout } from "@layouts/base";
+import { I18nProps } from "next-rosetta";
+import type { InsteadLocale } from "@modules/i18n";
 /**
  *
  */
@@ -24,7 +24,7 @@ export default LearnPage;
  *
  */
 export const getStaticProps: GetStaticProps<I18nProps<InsteadLocale>> = async (
-  context,
+  context
 ) => {
   const locale = context.locale || context.defaultLocale;
   const { table = {} } = await import(`@modules/i18n/${locale}`);

@@ -1,8 +1,8 @@
 /**
  */
-import { sprinkles } from '@styles/sprinkles.css';
-import { style } from '@vanilla-extract/css';
-import { vars } from '@styles/theme/index.css';
+import { sprinkles } from "@styles/sprinkles.css";
+import { style } from "@vanilla-extract/css";
+import { vars } from "@styles/theme/index.css";
 /**
  *
  */
@@ -26,7 +26,7 @@ export const styledBaseButton = style([
     borderColor: vars.bluePrint.color.slate10,
     color: vars.bluePrint.color.slate12,
     backgroundColor: vars.bluePrint.color.slate1,
-    ':hover': {
+    ":hover": {
       border: `2px solid ${vars.bluePrint.color.slate12}`,
       cursor: `pointer`,
     },
@@ -53,7 +53,7 @@ export const styledBaseButtonSmall = style([
     borderColor: vars.bluePrint.color.slate10,
     color: vars.bluePrint.color.slate12,
     backgroundColor: vars.bluePrint.color.slate1,
-    ':hover': {
+    ":hover": {
       border: `2px solid ${vars.bluePrint.color.slate12}`,
       cursor: `pointer`,
     },
@@ -75,7 +75,7 @@ export const styledBaseAltButton = style([
   {
     color: vars.bluePrint.color.slate1,
     backgroundColor: vars.bluePrint.color.slate12,
-    ':hover': {
+    ":hover": {
       outline: `2px solid currentColor`,
       cursor: `pointer`,
     },

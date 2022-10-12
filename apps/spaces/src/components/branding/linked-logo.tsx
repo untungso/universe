@@ -2,9 +2,9 @@
  *
  */
 
-import Image from 'next/image';
-import Link from 'next/link';
-import type { ReactElement } from 'react';
+import Image from "next/image";
+import Link from "next/link";
+import type { ReactElement } from "react";
 
 interface LinkedLogoProps {
   href: string;

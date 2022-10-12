@@ -1,12 +1,12 @@
-import type { InsteadLocale } from '.';
-import { publicApplicationName } from '@config/application';
+import type { InsteadLocale } from ".";
+import { publicApplicationName } from "@config/application";
 export const table: InsteadLocale = {
-  locale: 'English',
+  locale: "English",
   title: `Hello World, Welcome to`,
-  subTitle: 'The Internet of Malah Ngoding 🌐',
-  welcome: 'Welcome {{name}}! 😃',
+  subTitle: "The Internet of Malah Ngoding 🌐",
+  welcome: "Welcome {{name}}! 😃",
   profile: {
-    button: 'Press me!',
+    button: "Press me!",
   },
   auth: {
     connect: `Connect`,

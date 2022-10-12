@@ -1,11 +1,11 @@
 /**
  */
-import { Fragment, Suspense } from 'react';
-import { styledAuth, styledCard, styledLeft, styledRight } from './auth.css';
-import Head from 'next/head';
-import type { ReactElement } from 'react';
-import dynamic from 'next/dynamic';
-import { titleMaker } from '@utils/title-maker';
+import { Fragment, Suspense } from "react";
+import { styledAuth, styledCard, styledLeft, styledRight } from "./auth.css";
+import Head from "next/head";
+import type { ReactElement } from "react";
+import dynamic from "next/dynamic";
+import { titleMaker } from "@utils/title-maker";
 /**
  */
 type AuthLayoutProps = {
@@ -17,7 +17,7 @@ const CookieConsentLazy = dynamic(
   (): any => import(`@modules/cookies/cookie-consent`),
   {
     ssr: false,
-  },
+  }
 );
 /**
  */
