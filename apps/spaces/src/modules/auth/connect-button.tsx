@@ -1,12 +1,10 @@
 import { EnterIcon } from "@radix-ui/react-icons";
-import { Fragment, MouseEventHandler } from "react";
-import Link from "next/link";
+import { Fragment } from "react";
+import { Paragraph } from "../../components/typography/paragraph";
 import type { ReactElement } from "react";
-import { SmallButton } from "@components/button/base";
-import { useSession } from "next-auth/react";
-import { Paragraph } from "@components/typography/paragraph";
-import { styledConnectButton } from "./connect-button.css";
+import { SmallButton } from "../../components/button/base";
 import { useRouter } from "next/router";
+import { useSession } from "next-auth/react";
 
 export const ConnectButton = (): ReactElement => {
   const { data: session, status } = useSession();

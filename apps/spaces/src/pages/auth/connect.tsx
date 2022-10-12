@@ -3,12 +3,12 @@
  */
 import type { GetStaticProps, NextPage } from "next";
 import { I18nProps, useI18n } from "next-rosetta";
-import { AuthLayout } from "@layouts/auth";
-import { ConnectForm } from "@modules/auth/connect-form";
-import { Heading } from "@components/typography/heading";
-import { InsteadLocale } from "@modules/i18n";
-import { Logo } from "@components/branding/logo";
-import { Paragraph } from "@components/typography/paragraph";
+import { AuthLayout } from "../../layouts/auth";
+import { ConnectForm } from "../../modules/auth/connect-form";
+import { Heading } from "../../components/typography/heading";
+import { InsteadLocale } from "../../modules/i18n";
+import { Logo } from "../../components/branding/logo";
+import { Paragraph } from "../../components/typography/paragraph";
 /**
  *
  */

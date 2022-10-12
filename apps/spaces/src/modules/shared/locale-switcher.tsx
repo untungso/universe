@@ -1,6 +1,6 @@
 /**
  */
-import { InsteadLocale } from "@modules/i18n";
+import { InsteadLocale } from "../../modules/i18n";
 import Link from "next/link";
 import type { ReactElement } from "react";
 import { useI18n } from "next-rosetta";

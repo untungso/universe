@@ -2,10 +2,10 @@
  */
 import type { GetStaticProps, NextPage } from "next";
 import { I18nProps, useI18n } from "next-rosetta";
-import { BaseLayout } from "@layouts/base";
-import { Hero } from "@modules/landing/hero";
-import type { InsteadLocale } from "@modules/i18n";
-import { numberGenerator } from "@utils/number-generator";
+import { BaseLayout } from "../layouts/base";
+import { Hero } from "../modules/landing/hero";
+import type { InsteadLocale } from "../modules/i18n";
+import { numberGenerator } from "../utils/number-generator";
 /**
  *
  */

@@ -1,9 +1,9 @@
 /**
  */
 import type { GetStaticProps, NextPage } from "next";
-import { BaseLayout } from "@layouts/base";
+import { BaseLayout } from "../../layouts/base";
 import { I18nProps } from "next-rosetta";
-import type { InsteadLocale } from "@modules/i18n";
+import type { InsteadLocale } from "../../modules/i18n";
 /**
  *
  */

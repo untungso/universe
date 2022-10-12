@@ -1,0 +1,16 @@
+{
+  "name": "@instead/lib",
+  "version": "0.0.0",
+  "main": "./index.tsx",
+  "types": "./index.tsx",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint *.ts*"
+  },
+  "devDependencies": {
+    "@instead/eslint-config": "workspace:0.0.0",
+    "@instead/tsconfig": "workspace:0.0.0",
+    "eslint": "^7.32.0",
+    "typescript": "^4.5.2"
+  }
+}

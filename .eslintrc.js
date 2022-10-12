@@ -4,7 +4,7 @@ module.exports = {
   extends: ["@instead/eslint-config"],
   settings: {
     next: {
-      rootDir: ["apps/*/", "packages/*/", "services/*/"],
+      rootDir: ["."],
     },
   },
 };

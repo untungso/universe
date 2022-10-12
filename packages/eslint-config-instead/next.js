@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  plugins: ["import"],
+  extends: ["next", "turbo", "prettier"],
   rules: {
     "import/no-unresolved": "error",
     "sort-imports": [

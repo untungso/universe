@@ -1,5 +1,6 @@
 import type { InsteadLocale } from ".";
-import { publicApplicationName } from "@config/application";
+import { publicApplicationName } from "../../config/application";
+
 export const table: InsteadLocale = {
   locale: "English",
   title: `Hello World, Welcome to`,

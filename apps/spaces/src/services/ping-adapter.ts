@@ -1,4 +1,4 @@
-import { filamentService, microService } from "@utils/service";
+import { filamentService, microService } from "../utils/service";
 import { generalErrorResponseBuilder } from ".";
 
 interface PingServiceResponse {

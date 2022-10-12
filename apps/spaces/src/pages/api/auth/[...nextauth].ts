@@ -5,14 +5,14 @@ import {
   privateGoogleSecret,
   privateJwtSecret,
   publicApplicationUrl,
-} from "@config/application";
+} from "../../../config/application";
 import CredentialsProvider from "next-auth/providers/credentials";
 import GithubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 import NextAuth from "next-auth";
 import { ethers } from "ethers";
-import { getProfileDetails } from "@services/profile-adapter";
-import { issueMicrosToken } from "@services/auth-adapter";
+import { getProfileDetails } from "../../../services/profile-adapter";
+import { issueMicrosToken } from "../../../services/auth-adapter";
 
 export default NextAuth({
   secret: privateJwtSecret,

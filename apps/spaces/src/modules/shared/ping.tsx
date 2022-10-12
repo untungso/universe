@@ -3,8 +3,8 @@
 import {
   pingFilamentsService,
   pingMicrosService,
-} from "@services/ping-adapter";
-import { Button } from "@components/button/base";
+} from "../../services/ping-adapter";
+import { Button } from "../../components/button/base";
 import type { ReactElement } from "react";
 /**
  */

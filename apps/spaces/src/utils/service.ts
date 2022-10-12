@@ -1,6 +1,6 @@
 /**
  */
-import { publicFIlamentsUrl, publicMicrosUrl } from "@config/application";
+import { publicFIlamentsUrl, publicMicrosUrl } from "../config/application";
 import type { KyInstance } from "ky/distribution/types/ky";
 import ky from "ky-universal";
 /**
