@@ -1,1 +1,4 @@
-module.exports = require("@instead/eslint-config/base.js");
+module.exports = {
+  root: true,
+  extends: ["@instead/eslint-config"],
+};
