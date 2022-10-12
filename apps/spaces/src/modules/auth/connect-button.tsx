@@ -1,23 +1,30 @@
 import { EnterIcon } from "@radix-ui/react-icons";
-import { Fragment } from "react";
+import { Fragment, MouseEventHandler } from "react";
 import Link from "next/link";
 import type { ReactElement } from "react";
 import { SmallButton } from "@components/button/base";
 import { useSession } from "next-auth/react";
+import { Paragraph } from "@components/typography/paragraph";
+import { styledConnectButton } from "./connect-button.css";
+import { useRouter } from "next/router";
 
 export const ConnectButton = (): ReactElement => {
   const { data: session, status } = useSession();
+  const router = useRouter();
+
+  const handleClick = (): void => {
+    router.push(`/auth/connect`);
+  };
+
   return (
     <Fragment>
       {status === "loading" ? (
-        <p>Loading...</p>
+        <Paragraph>Loading...</Paragraph>
       ) : status === "unauthenticated" ? (
-        <Link href="/auth/connect" passHref key="/auth/connect">
-          <SmallButton>
-            <p>Connect</p>
-            <EnterIcon />
-          </SmallButton>
-        </Link>
+        <SmallButton onClick={handleClick}>
+          <p>Connect</p>
+          <EnterIcon />
+        </SmallButton>
       ) : (
         <SmallButton>Avatar</SmallButton>
       )}
