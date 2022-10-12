@@ -5,4 +5,7 @@ export const styledButton = style({
   border: `2px solid black`,
   backgroundColor: `white`,
   fontWeight: `bolder`,
+  ":hover": {
+    cursor: `pointer`,
+  },
 });
