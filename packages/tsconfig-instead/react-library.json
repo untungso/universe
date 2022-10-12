@@ -6,6 +6,19 @@
     "jsx": "react-jsx",
     "lib": ["ES2015"],
     "module": "ESNext",
-    "target": "es6"
+    "target": "es6",
+    "strict": true,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "outDir": "lib",
+    "useDefineForClassFields": true,
+    "allowJs": false,
+    "skipLibCheck": false,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
   }
 }

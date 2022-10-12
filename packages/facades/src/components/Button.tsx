@@ -1,18 +1,10 @@
 import * as React from "react";
+import * as styles from "./Button.css";
 
 interface ButtonProps {
   children: React.ReactElement | React.ReactElement[] | string;
 }
 
 export const Button = (props: ButtonProps): React.ReactElement => {
-  return (
-    <button
-      style={{
-        padding: `4px 16px`,
-        border: `2px solid black`,
-      }}
-    >
-      {props.children}
-    </button>
-  );
+  return <button className={styles.styledButton}>{props.children}</button>;
 };
