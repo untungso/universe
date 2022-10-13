@@ -19,5 +19,18 @@
       "cache": false
     }
   },
-  "globalEnv": [".env"]
+  "globalDependencies": [
+    "$INSTEAD_TOKEN",
+    "$NEXT_PUBLIC_MICROS_URL",
+    "$NEXT_PUBLIC_FILAMENTS_URL",
+    "$NEXT_PUBLIC_ALCHEMY_ID",
+    "$GITHUB_ID",
+    "$GITHUB_SECRET",
+    "$GOOGLE_CLIENT_ID",
+    "$GOOGLE_CLIENT_SECRET",
+    "$NEXTAUTH_URL",
+    "$JWT_SECRET",
+    "$JWT_SIGNING_KEY",
+    "$JWT_ENCRYPTION_KEY"
+  ]
 }

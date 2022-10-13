@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ["next", "turbo", "prettier"],
+  extends: ["next", "turbo", "prettier", "next/core-web-vitals"],
   rules: {
     "import/no-unresolved": "error",
     "sort-imports": [

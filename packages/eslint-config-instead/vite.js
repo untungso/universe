@@ -13,6 +13,7 @@ module.exports = {
         allowSeparatedGroups: false,
       },
     ],
+    "@typescript-eslint/consistent-type-imports": "error",
   },
   settings: {
     "import/parsers": {
