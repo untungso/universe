@@ -13,7 +13,7 @@ type AuthLayoutProps = {
   title: string;
 };
 
-const CookieConsentLazy = dynamic(
+const CookieConsentLazy = dynamic<{}>(
   (): any => import(`../modules/cookies/cookie-consent`),
   {
     ssr: false,

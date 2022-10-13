@@ -1,37 +1,18 @@
 import create from "zustand";
-import { persist } from "zustand/middleware";
 
-type ConnectFormState = {
-  showCookiesModal: boolean;
-  consentValue: string;
-};
+interface ConnectFormState {
+  loading: boolean;
+}
 
-type ConnectFormAction = {
-  toggleCookies: () => void;
-  setConsentValue: (value: string) => void;
-  reset: () => void;
-};
+interface ConnectFormAction {
+  toggleLoading: () => void;
+}
 
-const initialState: ConnectFormState = {
-  showCookiesModal: true,
-  consentValue: `NOT_SET`,
-};
-
-export const useCookiesPersist = create<ConnectFormState & ConnectFormAction>()(
-  persist(
-    (set, get) => ({
-      showCookiesModal: initialState.showCookiesModal,
-      consentValue: initialState.consentValue,
-      toggleCookies: () => {
-        set({ showCookiesModal: !get().showCookiesModal });
-      },
-      setConsentValue: (value: string) => {
-        set({ consentValue: value });
-      },
-      reset: () => {
-        set(initialState);
-      },
-    }),
-    { name: `instead-cookies` }
-  )
+export const useConnectForm = create<ConnectFormState & ConnectFormAction>()(
+  (set, get) => ({
+    loading: false,
+    toggleLoading: () => {
+      set({ loading: !get().loading });
+    },
+  })
 );
