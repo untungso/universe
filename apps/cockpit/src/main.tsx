@@ -7,7 +7,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <div>
       <h1>Hello World</h1>
-      <Button>React Apps</Button>
+      <Button>React </Button>
     </div>
   </React.StrictMode>
 );

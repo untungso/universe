@@ -1,16 +1,18 @@
 {
-  "name": "@instead/lib",
+  "name": "@instead/utils",
   "version": "0.0.0",
-  "main": "./index.tsx",
-  "types": "./index.tsx",
   "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "lint": "eslint *.ts*"
+    "build": "tsup",
+    "lint": "eslint src/**/*.ts"
   },
   "devDependencies": {
     "@instead/eslint-config": "workspace:0.0.0",
     "@instead/tsconfig": "workspace:0.0.0",
     "eslint": "^7.32.0",
+    "tsup": "^6.2.3",
     "typescript": "^4.5.2"
   }
 }
