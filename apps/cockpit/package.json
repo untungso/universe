@@ -6,19 +6,17 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
-    "lint": "eslint"
+    "lint": "eslint src/**.*[tsx,ts]"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@instead/facades": "workspace:0.0.0",
     "@vanilla-extract/vite-plugin": "^3.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@instead/utils": "workspace:0.0.0",
     "@instead/tsconfig": "workspace:0.0.0",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",

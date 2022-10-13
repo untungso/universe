@@ -3,22 +3,6 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "env": [
-        "NEXT_PUBLIC_MICROS_URL",
-        "NEXT_PUBLIC_FILAMENTS_URL",
-        "NEXT_PUBLIC_ALCHEMY_ID",
-        "APP_NAME",
-        "NEXT_PUBLIC_SPACES_URL",
-        "INSTEAD_TOKEN",
-        "GITHUB_ID",
-        "GITHUB_SECRET",
-        "GOOGLE_CLIENT_ID",
-        "GOOGLE_CLIENT_SECRET",
-        "NEXTAUTH_URL",
-        "JWT_SECRET",
-        "JWT_SIGNING_KEY",
-        "JWT_ENCRYPTION_KEY"
-      ],
       "outputs": ["dist/**", ".next/**"]
     },
     "lint": {
@@ -29,23 +13,7 @@
       "dependsOn": ["^build"]
     },
     "dev": {
-      "cache": false,
-      "env": [
-        "NEXT_PUBLIC_MICROS_URL",
-        "NEXT_PUBLIC_FILAMENTS_URL",
-        "NEXT_PUBLIC_ALCHEMY_ID",
-        "APP_NAME",
-        "NEXT_PUBLIC_SPACES_URL",
-        "INSTEAD_TOKEN",
-        "GITHUB_ID",
-        "GITHUB_SECRET",
-        "GOOGLE_CLIENT_ID",
-        "GOOGLE_CLIENT_SECRET",
-        "NEXTAUTH_URL",
-        "JWT_SECRET",
-        "JWT_SIGNING_KEY",
-        "JWT_ENCRYPTION_KEY"
-      ]
+      "cache": false
     },
     "serve": {
       "cache": false

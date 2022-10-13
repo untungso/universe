@@ -4,7 +4,9 @@ import { createVanillaExtractPlugin } from "@vanilla-extract/next-plugin";
 import nextTranspile from "next-transpile-modules";
 
 const withVanillaExtract = createVanillaExtractPlugin();
-const withTM = nextTranspile(["@instead/facades"]);
+const withTM = nextTranspile([
+  // "@instead/facades"
+]);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
