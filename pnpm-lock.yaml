@@ -14,7 +14,6 @@ importers:
 
   apps/cockpit:
     specifiers:
-      '@instead/facades': workspace:0.0.0
       '@instead/tsconfig': workspace:0.0.0
       '@types/react': ^18.0.21
       '@types/react-dom': ^18.0.6
@@ -25,7 +24,6 @@ importers:
       typescript: ^4.6.4
       vite: ^3.1.6
     dependencies:
-      '@instead/facades': link:../../packages/facades
       '@vanilla-extract/vite-plugin': 3.6.1_vite@3.1.7
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -41,7 +39,6 @@ importers:
     specifiers:
       '@babel/core': ^7.19.3
       '@instead/eslint-config': workspace:0.0.0
-      '@instead/facades': workspace:0.0.0
       '@instead/tsconfig': workspace:0.0.0
       '@legendapp/state': ^0.18.8
       '@radix-ui/react-icons': ^1.1.1
@@ -72,7 +69,6 @@ importers:
       typescript: ^4.8.4
       zustand: 4.1.1
     dependencies:
-      '@instead/facades': link:../../packages/facades
       '@legendapp/state': 0.18.8_react@18.2.0
       '@radix-ui/react-icons': 1.1.1_react@18.2.0
       '@vanilla-extract/babel-plugin': 1.2.0
@@ -129,21 +125,6 @@ importers:
       eslint-plugin-import: 2.26.0_rzvofg5hvmrwmqy3stei5y5rdq
       eslint-plugin-react: 7.31.10_eslint@8.24.0
     devDependencies:
-      typescript: 4.8.4
-
-  packages/facades:
-    specifiers:
-      '@instead/tsconfig': workspace:*
-      '@types/react': 18.0.17
-      '@vanilla-extract/css': ^1.9.0
-      '@vanilla-extract/sprinkles': ^1.5.0
-      typescript: ^4.8.4
-    dependencies:
-      '@vanilla-extract/css': 1.9.1
-      '@vanilla-extract/sprinkles': 1.5.0_@vanilla-extract+css@1.9.1
-    devDependencies:
-      '@instead/tsconfig': link:../tsconfig-instead
-      '@types/react': 18.0.17
       typescript: 4.8.4
 
   packages/tsconfig-instead:
@@ -2496,14 +2477,6 @@ packages:
     resolution: {integrity: sha512-/5OFZgfIPSwy+YuIBP/FgJnQnsxhZhjjrnxudMddeblOouIodEQ75X14Rr4wGSG/bknL+Omy9iWlLo1u/9GzAA==}
     dependencies:
       '@types/react': 18.0.21
-    dev: true
-
-  /@types/react/18.0.17:
-    resolution: {integrity: sha512-38ETy4tL+rn4uQQi7mB81G7V1g0u2ryquNmsVIOKUAEIDK+3CUjZ6rSRpdvS99dNBnkLFL83qfmtLacGOTIhwQ==}
-    dependencies:
-      '@types/prop-types': 15.7.5
-      '@types/scheduler': 0.16.2
-      csstype: 3.1.1
     dev: true
 
   /@types/react/18.0.21:

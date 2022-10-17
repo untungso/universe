@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@instead/facades": "workspace:0.0.0",
     "@vanilla-extract/next-plugin": "^2.1.1",
     "next": "^12.3.1",
     "next-compose-plugins": "^2.2.1",
