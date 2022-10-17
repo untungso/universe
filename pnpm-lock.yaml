@@ -131,7 +131,6 @@ importers:
       '@honojs/node-server': ^0.1.0
       '@instead/micros-admin': workspace:0.0.0
       '@instead/micros-auth': workspace:0.0.0
-      '@instead/micros-home': workspace:0.0.0
       '@types/node': ^18.11.0
       hono: ^2.2.5
       tsx: ^3.10.1
@@ -139,7 +138,6 @@ importers:
       '@honojs/node-server': 0.1.0
       '@instead/micros-admin': link:../admin
       '@instead/micros-auth': link:../auth
-      '@instead/micros-home': link:../home
       hono: 2.2.5
     devDependencies:
       '@types/node': 18.11.0
@@ -147,25 +145,22 @@ importers:
 
   services/auth:
     specifiers:
+      '@instead/eslint-config': workspace:0.0.0
+      '@instead/tsconfig': workspace:0.0.0
       '@types/node': ^18.11.0
       hono: ^2.2.5
+      tsup: ^6.3.0
       tsx: ^3.10.1
+      typescript: ^4.8.4
     dependencies:
       hono: 2.2.5
     devDependencies:
+      '@instead/eslint-config': link:../../packages/eslint-config-instead
+      '@instead/tsconfig': link:../../packages/tsconfig-instead
       '@types/node': 18.11.0
+      tsup: 6.3.0_typescript@4.8.4
       tsx: 3.10.1
-
-  services/home:
-    specifiers:
-      '@types/node': ^18.11.0
-      hono: ^2.2.5
-      tsx: ^3.10.1
-    dependencies:
-      hono: 2.2.5
-    devDependencies:
-      '@types/node': 18.11.0
-      tsx: 3.10.1
+      typescript: 4.8.4
 
 packages:
 

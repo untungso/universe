@@ -11,7 +11,6 @@
   "license": "MIT",
   "dependencies": {
     "@instead/micros-auth": "workspace:0.0.0",
-    "@instead/micros-home": "workspace:0.0.0",
     "@instead/micros-admin": "workspace:0.0.0",
     "hono": "^2.2.5",
     "@honojs/node-server": "^0.1.0"
