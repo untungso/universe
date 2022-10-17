@@ -1,0 +1,23 @@
+{
+  "name": "@instead/micros-api",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@instead/micros-auth": "workspace:0.0.0",
+    "@instead/micros-home": "workspace:0.0.0",
+    "@instead/micros-admin": "workspace:0.0.0",
+    "hono": "^2.2.5",
+    "@honojs/node-server": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.0",
+    "tsx": "^3.10.1"
+  }
+}
