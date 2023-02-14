@@ -1,5 +1,0 @@
-{
-  "extends": "@instead/tsconfig/library.json",
-  "include": ["**/*.ts"],
-  "exclude": ["node_modules"]
-}
