@@ -62,6 +62,7 @@ export const styledRight = style([
 
 export const styledNavLink = style([
   sprinkles({
+    fontSize: `regular`,
     marginX: `large`,
     borderBottomStyle: `solid`,
     borderWidth: `0.1875rem`,

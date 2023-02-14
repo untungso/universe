@@ -80,10 +80,10 @@ const Haiku = (): ReactElement => {
   return (
     <div className={styledWall}>
       <span>古池や 蛙飛び込む 水の音</span>
-      <span>春の海　ひねもすのたり　のたりかな</span>
-      <span>痩蛙　負けるな一茶　是にあり</span>
-      <span>菜の花や　月は東に　日は西に</span>
-      <span>閑けさや　岩にしみいる　蝉の声</span>
+      <span>春の海 ひねもすのたり のたりかな</span>
+      <span>痩蛙 負けるな一茶 是にあり</span>
+      <span>菜の花や 月は東に 日は西に</span>
+      <span>閑けさや 岩にしみいる 蝉の声</span>
     </div>
   );
 };

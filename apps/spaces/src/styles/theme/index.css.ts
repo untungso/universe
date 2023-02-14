@@ -1,6 +1,6 @@
 import { createGlobalTheme, createThemeContract } from "@vanilla-extract/css";
 
-export const bluePrint: any = createThemeContract({
+export const bluePrint = createThemeContract({
   color: {
     slate1: ``,
     slate2: ``,
@@ -21,7 +21,7 @@ export const bluePrint: any = createThemeContract({
   },
 });
 
-export const globalTheme: any = createGlobalTheme(`:root`, {
+export const globalTheme = createGlobalTheme(`:root`, {
   family: {
     mono: `'NectoMono', monospace`,
     sans: `'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif`,
@@ -31,16 +31,16 @@ export const globalTheme: any = createGlobalTheme(`:root`, {
     bold: `700`,
   },
   fontSizes: {
-    xsmall: `11px`,
-    smallest: `12px`,
-    smaller: `13px`,
-    small: `14px`,
-    regular: `16px`,
-    large: `18px`,
-    larger: `20px`,
-    largest: `24px`,
-    xlarge: `28px`,
-    xxlarge: `32px`,
+    xsmall: `0.6rem`,
+    smallest: `0.65rem`,
+    smaller: `0.7rem`,
+    small: `0.75rem`,
+    regular: `0.8rem`,
+    large: `1rem`,
+    larger: `1.4rem`,
+    largest: `1.6rem`,
+    xlarge: `1.7rem`,
+    xxlarge: `1.8rem`,
   },
   radii: {
     none: `0px`,

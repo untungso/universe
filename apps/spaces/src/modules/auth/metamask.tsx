@@ -5,11 +5,8 @@ import { deployedChain, publicApplicationUrl } from "../../config/application";
 import Image from "next/image";
 import type { ReactElement } from "react";
 import { SmallButton } from "../../components/button/base";
-import { callbackUrlHandler } from "../../utils/callback-url";
 import { ethers } from "ethers";
-import { signIn } from "next-auth/react";
 import { useConnectForm } from "./connect-form.store";
-import { useRouter } from "next/router";
 
 declare global {
   interface Window {

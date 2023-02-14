@@ -54,6 +54,7 @@ export const styledSocialMediaLink = style([
   sprinkles({
     display: `flex`,
     flexDirection: `row`,
+    gap: `xsmall`,
     justifyContent: `center`,
     alignItems: `center`,
     marginRight: {
