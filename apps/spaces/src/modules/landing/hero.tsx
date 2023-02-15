@@ -10,12 +10,7 @@ interface HeroInterface {
   random: number;
 }
 export const Hero = (props: HeroInterface): ReactElement => {
-  const altVideos = [
-    `/static/gifs/first.mp4`,
-    `/static/gifs/second.mp4`,
-    `/static/gifs/third.mp4`,
-    `/static/gifs/forth.mp4`,
-  ];
+  const altVideos = [`/static/gifs/first.mp4`];
 
   return (
     <div className={styledHero}>

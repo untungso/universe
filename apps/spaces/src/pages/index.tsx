@@ -37,6 +37,6 @@ export const getStaticProps: GetStaticProps<I18nProps<InsteadLocale>> = async (
   const locale = context.locale || context.defaultLocale;
   const { table = {} } = await import(`../modules/i18n/${locale}`);
   return {
-    props: { table, randomNumber: numberGenerator(0, 3) },
+    props: { table, randomNumber: numberGenerator(0, 1) },
   };
 };

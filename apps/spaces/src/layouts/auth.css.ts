@@ -70,7 +70,7 @@ export const styledRight = style([
         width: `calc(100vw - 380px)`,
       },
     },
-    backgroundColor: vars.bluePrint.color.slate5,
+    backgroundColor: vars.bluePrint.color.slate1,
   },
 ]);
 

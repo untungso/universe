@@ -22,9 +22,6 @@
   "globalDependencies": [],
   "globalEnv": [
     "INSTEAD_TOKEN",
-    "NEXT_PUBLIC_MICROS_URL",
-    "NEXT_PUBLIC_FILAMENTS_URL",
-    "NEXT_PUBLIC_ALCHEMY_ID",
     "GITHUB_ID",
     "GITHUB_SECRET",
     "GOOGLE_CLIENT_ID",

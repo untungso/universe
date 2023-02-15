@@ -15,15 +15,11 @@ const LocaleSwitcher = (): ReactElement => {
     <div>
       {locale === `en` ? (
         <Link href={asPath} locale={`id`}>
-          <a>
-            <UnitedKingdomFlag />
-          </a>
+          <UnitedKingdomFlag />
         </Link>
       ) : (
         <Link href={asPath} locale={`en`}>
-          <a>
-            <IndonesianFlag />
-          </a>
+          <IndonesianFlag />
         </Link>
       )}
     </div>

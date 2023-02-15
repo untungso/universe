@@ -1,22 +1,26 @@
 /**
  *
  */
-import type { GetStaticProps, NextPage } from "next";
-import { I18nProps, useI18n } from "next-rosetta";
+import { getProviders, signIn } from "next-auth/react";
 import { AuthLayout } from "../../layouts/auth";
 import { ConnectForm } from "../../modules/auth/connect-form";
+import type { GetServerSidePropsContext } from "next";
 import { Heading } from "../../components/typography/heading";
 import { InsteadLocale } from "../../modules/i18n";
 import { Logo } from "../../components/branding/logo";
 import { Paragraph } from "../../components/typography/paragraph";
+import { authOptions } from "../api/auth/[...nextauth]";
+import { getServerSession } from "next-auth";
+import { useI18n } from "next-rosetta";
 /**
  *
  */
 interface ConnectPageProps {
   connect?: boolean;
+  providers: any;
 }
 
-export const ConnectPage: NextPage<ConnectPageProps> = (props) => {
+export default function ConnectPage(props: ConnectPageProps) {
   const { t } = useI18n<InsteadLocale>();
 
   return (
@@ -25,18 +29,30 @@ export const ConnectPage: NextPage<ConnectPageProps> = (props) => {
       <Heading>{t("auth.title")}</Heading>
       <Paragraph>{t("auth.subTitle")}</Paragraph>
       <ConnectForm />
+      <>
+        {Object.values(props.providers).map((provider: any) => (
+          <div key={provider.name}>
+            <button onClick={() => signIn(provider.id)}>
+              Sign in with {provider.name}
+            </button>
+          </div>
+        ))}
+      </>
     </AuthLayout>
   );
-};
+}
+export async function getServerSideProps(context: GetServerSidePropsContext) {
+  const session = await getServerSession(context.req, context.res, authOptions);
 
-export const getStaticProps: GetStaticProps<I18nProps<InsteadLocale>> = async (
-  context
-) => {
+  if (session) {
+    return { redirect: { destination: "/" } };
+  }
+
+  const providers = await getProviders();
   const locale = context.locale || context.defaultLocale;
   const { table = {} } = await import(`../../modules/i18n/${locale}`);
-  return {
-    props: { table },
-  };
-};
 
-export default ConnectPage;
+  return {
+    props: { providers: providers ?? [], table },
+  };
+}

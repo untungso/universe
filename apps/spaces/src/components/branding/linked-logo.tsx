@@ -12,14 +12,12 @@ interface LinkedLogoProps {
 export const LinkedLogo = (props: LinkedLogoProps): ReactElement => {
   return (
     <Link href={props.href}>
-      <a>
-        <Image
-          src="/static/favicons/mstile-150x150.png"
-          alt="Logo of Malah Ngoding, The Boxes"
-          width={48}
-          height={48}
-        />
-      </a>
+      <Image
+        src="/static/favicons/mstile-150x150.png"
+        alt="Logo of Malah Ngoding, The Boxes"
+        width={48}
+        height={48}
+      />
     </Link>
   );
 };

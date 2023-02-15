@@ -10,7 +10,7 @@ export const styledTwoSide = style([
     display: `grid`,
     gridTemplateColumns: {
       mobile: `1fr`,
-      desktop: `2fr 1fr`,
+      desktop: `1fr 1fr`,
     },
   }),
   {
@@ -19,11 +19,6 @@ export const styledTwoSide = style([
   },
 ]);
 
-export const styledMain = style([{}]);
+export const styledMain = style([]);
 
-export const styledSide = style([
-  {
-    position: `sticky`,
-    top: `auto`,
-  },
-]);
+export const styledSide = style([]);

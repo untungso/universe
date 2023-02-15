@@ -8,6 +8,7 @@ export const styledBase = style([
     flexDirection: `column`,
     justifyContent: "center",
     alignItems: `center`,
+    minHeight: `50vh`,
     width: {
       mobile: `100vw`,
       tablet: `calc(100vw - 100px)`,

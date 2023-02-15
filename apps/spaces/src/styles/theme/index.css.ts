@@ -24,7 +24,7 @@ export const bluePrint = createThemeContract({
 export const globalTheme = createGlobalTheme(`:root`, {
   family: {
     mono: `'NectoMono', monospace`,
-    sans: `'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif`,
+    sans: `var(--font-montserrat), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif`,
   },
   fontWeights: {
     normal: `400`,

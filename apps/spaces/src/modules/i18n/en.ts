@@ -11,8 +11,8 @@ export const table: InsteadLocale = {
   },
   auth: {
     connect: `Connect`,
-    title: `string;`,
-    subTitle: `string;`,
+    title: `Connect your account`,
+    subTitle: `Pick your providers, enjoy exciting features, meets your community. Learn and grow together as a platform.`,
     metamask: {
       title: `string;`,
       subTitle: `string;`,
