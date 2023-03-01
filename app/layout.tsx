@@ -1,8 +1,13 @@
 import "./globals.css";
 import { Montserrat, Roboto_Mono } from "next/font/google";
 
-export const metadata = {
-  title: "Malah Ngoding",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    default: "Hello World | Malah Ngoding Spaces",
+    template: "%s | Malah Ngoding Spaces",
+  },
   description: "Lupa Makan, Lupa Tidur, Malah Ngoding",
 };
 
@@ -17,6 +22,7 @@ const roboto_mono = Roboto_Mono({
   subsets: ["latin"],
   display: "swap",
 });
+
 export default function RootLayout({
   children,
 }: {
