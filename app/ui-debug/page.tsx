@@ -10,7 +10,6 @@ import {
 } from "@/components";
 
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: "[Token] UI Debug",
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function TokenDebug() {
   return (
-    <div className="p-4 max-w-[640px]">
+    <div className="max-w-[640px] p-4">
       <Section>
         <Debug>
           <StyledCode>UiDebug</StyledCode>
@@ -67,58 +66,58 @@ export default function TokenDebug() {
       <Section>
         <Debug>
           <StyledCode>ColorSlate</StyledCode>
-          <div className="flex flex-row flex-wrap gap-4 mb-4">
-            <div className="h-12 w-12 bg-slate-1 border border-slate-12" />
-            <div className="h-12 w-12 bg-slate-2 border border-slate-12" />
-            <div className="h-12 w-12 bg-slate-3 border border-slate-12" />
-            <div className="h-12 w-12 bg-slate-4 border border-slate-12" />
-            <div className="h-12 w-12 bg-slate-5 border border-slate-12" />
-            <div className="h-12 w-12 bg-slate-6 border border-slate-12" />
-            <div className="h-12 w-12 bg-slate-8 border border-slate-12" />
-            <div className="h-12 w-12 bg-slate-9 border border-slate-12" />
-            <div className="h-12 w-12 bg-slate-10 border border-slate-12" />
-            <div className="h-12 w-12 bg-slate-11 border border-slate-12" />
-            <div className="h-12 w-12 bg-slate-12 border border-slate-12" />
+          <div className="mb-4 flex flex-row flex-wrap gap-4">
+            <div className="h-12 w-12 border border-slate-12 bg-slate-1" />
+            <div className="h-12 w-12 border border-slate-12 bg-slate-2" />
+            <div className="h-12 w-12 border border-slate-12 bg-slate-3" />
+            <div className="h-12 w-12 border border-slate-12 bg-slate-4" />
+            <div className="h-12 w-12 border border-slate-12 bg-slate-5" />
+            <div className="h-12 w-12 border border-slate-12 bg-slate-6" />
+            <div className="h-12 w-12 border border-slate-12 bg-slate-8" />
+            <div className="h-12 w-12 border border-slate-12 bg-slate-9" />
+            <div className="h-12 w-12 border border-slate-12 bg-slate-10" />
+            <div className="h-12 w-12 border border-slate-12 bg-slate-11" />
+            <div className="h-12 w-12 border border-slate-12 bg-slate-12" />
           </div>
         </Debug>
         <Debug>
           <StyledCode>ColorBlue</StyledCode>
-          <div className="flex flex-row flex-wrap gap-4 mb-4">
-            <div className="h-12 w-12 bg-blue-100 border border-blue" />
-            <div className="h-12 w-12 bg-blue-800 border border-blue" />
-            <div className="h-12 w-12 bg-blue border border-blue" />
+          <div className="mb-4 flex flex-row flex-wrap gap-4">
+            <div className="h-12 w-12 border border-blue bg-blue-100" />
+            <div className="h-12 w-12 border border-blue bg-blue-800" />
+            <div className="h-12 w-12 border border-blue bg-blue" />
           </div>
         </Debug>
         <Debug>
           <StyledCode>ColorGreen</StyledCode>
-          <div className="flex flex-row flex-wrap gap-4 mb-4">
-            <div className="h-12 w-12 bg-green-100 border border-green" />
-            <div className="h-12 w-12 bg-green-800 border border-green" />
-            <div className="h-12 w-12 bg-green border border-green" />
+          <div className="mb-4 flex flex-row flex-wrap gap-4">
+            <div className="h-12 w-12 border border-green bg-green-100" />
+            <div className="h-12 w-12 border border-green bg-green-800" />
+            <div className="h-12 w-12 border border-green bg-green" />
           </div>
         </Debug>
         <Debug>
           <StyledCode>ColorYellow</StyledCode>
-          <div className="flex flex-row flex-wrap gap-4 mb-4">
-            <div className="h-12 w-12 bg-yellow-100 border border-yellow" />
-            <div className="h-12 w-12 bg-yellow-800 border border-yellow" />
-            <div className="h-12 w-12 bg-yellow border border-yellow" />
+          <div className="mb-4 flex flex-row flex-wrap gap-4">
+            <div className="h-12 w-12 border border-yellow bg-yellow-100" />
+            <div className="h-12 w-12 border border-yellow bg-yellow-800" />
+            <div className="h-12 w-12 border border-yellow bg-yellow" />
           </div>
         </Debug>
         <Debug>
           <StyledCode>ColorRed</StyledCode>
-          <div className="flex flex-row flex-wrap gap-4 mb-4">
-            <div className="h-12 w-12 bg-red-100 border border-red" />
-            <div className="h-12 w-12 bg-red-800 border border-red" />
-            <div className="h-12 w-12 bg-red border border-red" />
+          <div className="mb-4 flex flex-row flex-wrap gap-4">
+            <div className="h-12 w-12 border border-red bg-red-100" />
+            <div className="h-12 w-12 border border-red bg-red-800" />
+            <div className="h-12 w-12 border border-red bg-red" />
           </div>
         </Debug>
         <Debug>
           <StyledCode>ColorPink</StyledCode>
-          <div className="flex flex-row flex-wrap gap-4 mb-4">
-            <div className="h-12 w-12 bg-pink-100 border border-pink" />
-            <div className="h-12 w-12 bg-pink-800 border border-pink" />
-            <div className="h-12 w-12 bg-pink border border-pink" />
+          <div className="mb-4 flex flex-row flex-wrap gap-4">
+            <div className="h-12 w-12 border border-pink bg-pink-100" />
+            <div className="h-12 w-12 border border-pink bg-pink-800" />
+            <div className="h-12 w-12 border border-pink bg-pink" />
           </div>
         </Debug>
       </Section>

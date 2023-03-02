@@ -3,7 +3,7 @@ interface TextProps {
 }
 export const Paragraph = (props: TextProps) => {
   return (
-    <p className="font-base leading-relaxed mb-4 text-md font-sans text-justify">
+    <p className="font-base text-md mb-4 text-justify font-sans leading-relaxed">
       {props.children}
     </p>
   );

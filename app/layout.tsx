@@ -2,6 +2,8 @@ import "./globals.css";
 import { Montserrat, Roboto_Mono } from "next/font/google";
 
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
+import { Loader } from "./loader";
 
 export const metadata: Metadata = {
   title: {
@@ -23,17 +25,16 @@ const roboto_mono = Roboto_Mono({
   display: "swap",
 });
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="id"
       className={`${montserrat.variable} ${roboto_mono.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        {children}
+        <Loader />
+      </body>
     </html>
   );
 }

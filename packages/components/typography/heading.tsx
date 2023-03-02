@@ -3,7 +3,7 @@ interface TextProps {
 }
 export const Heading = (props: TextProps) => {
   return (
-    <h2 className="text-3xl font-base text-slate-12 mb-3 font-sans">
+    <h2 className="font-base mb-3 font-sans text-3xl text-slate-12">
       {props.children}
     </h2>
   );

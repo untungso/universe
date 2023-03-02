@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export default function Root() {
   return (
-    <main className="p-4 max-w-[640px]">
+    <main className="max-w-[640px] p-4">
       <StyledCode>Title</StyledCode>
       <Title>Halo Semua!</Title>
       <StyledCode>SubTitle</StyledCode>
@@ -31,13 +31,13 @@ export default function Root() {
       <Paragraph>
         <strong>Malah Ngoding</strong> juga menyediakan jasa konsultasi untuk
         projek digital kamu. Silahkan hubungi kami pada surel{" "}
-        <a className="underline font-bold" href="mailto:malahngoding@gmail.com">
+        <a className="font-bold underline" href="mailto:malahngoding@gmail.com">
           malahngoding@gmail.com
         </a>{" "}
         untuk diskusi lebih lanjut.
       </Paragraph>
       <Link href={`/ui-debug`}>
-        <button className="bg-slate-1 px-6 py-2 text-md font-semibold border-2 border-slate-12 rounded-md box-shadow drop-shadow-md hover:drop-shadow-lg">
+        <button className="text-md box-shadow rounded-md border-2 border-slate-12 bg-slate-1 px-6 py-2 font-semibold drop-shadow-md hover:drop-shadow-lg">
           Mulai
         </button>
       </Link>
