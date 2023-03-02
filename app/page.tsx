@@ -19,7 +19,7 @@ export default function Root() {
       <StyledCode>Heading</StyledCode>
       <Heading>Malah Ngoding</Heading>
       <StyledCode>InsteadLogo</StyledCode>
-      <InsteadLogo />
+      <InsteadLogo scale={1} />
       <StyledCode>Paragraph</StyledCode>
       <Paragraph>
         Selamat datang di <strong>Malah Ngoding</strong>. Kami merupakan
@@ -37,7 +37,7 @@ export default function Root() {
         untuk diskusi lebih lanjut.
       </Paragraph>
       <Link href={`/ui-debug`}>
-        <button className="bg-slate-1 max-w-sm px-6 py-2 text-md font-semibold border-2 border-slate-12 rounded-md box-shadow drop-shadow-md sm:max-w-sm">
+        <button className="bg-slate-1 px-6 py-2 text-md font-semibold border-2 border-slate-12 rounded-md box-shadow drop-shadow-md hover:drop-shadow-lg">
           Mulai
         </button>
       </Link>

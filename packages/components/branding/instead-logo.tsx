@@ -1,11 +1,15 @@
 import Image from "next/image";
 
-export const InsteadLogo = () => {
+interface LogoProps {
+  scale: number;
+}
+
+export const InsteadLogo = (props: LogoProps) => {
   return (
     <Image
       src="/assets/512x512.png"
-      height={128}
-      width={128}
+      height={128 * props.scale}
+      width={128 * props.scale}
       alt="Malah Ngoding Logo"
     />
   );
