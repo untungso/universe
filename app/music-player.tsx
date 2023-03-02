@@ -58,7 +58,6 @@ const MusicPlayer = () => {
 
   useEffect(() => {
     if (audioRef && audioRef.current) {
-      // Passing the same reference
       console.log("added");
       audioRef.current.addEventListener("ended", () => {
         console.log("ended");
@@ -67,7 +66,6 @@ const MusicPlayer = () => {
     }
 
     return () => {
-      // Passing the same reference
       audioRef.current.removeEventListener("ended", playNext);
     };
   }, []);
