@@ -4,6 +4,8 @@ import {
   Paragraph,
   StyledCode,
   SubTitle,
+  Debug,
+  Section,
   Title,
 } from "@/components";
 
@@ -13,26 +15,6 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = {
   title: "[Token] UI Debug",
   description: "Lupa Makan, Lupa Tidur, Malah Ngoding",
-};
-
-interface SectionProps {
-  children: ReactNode;
-}
-
-const Section = (props: SectionProps) => {
-  return <div className="pb-8 ">{props.children}</div>;
-};
-
-interface DebugProps {
-  children: ReactNode;
-}
-
-const Debug = (props: DebugProps) => {
-  return (
-    <div className="border border-slate-1 hover:border-red hover:bg-red-100">
-      {props.children}
-    </div>
-  );
 };
 
 export default function TokenDebug() {
