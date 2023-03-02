@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 
 const MusicPlayer = () => {
-  const sourceObject = [
+  const [sourceObject] = useState([
     {
       title: "Cyber War",
       artist: "AlexiAction",
@@ -19,11 +19,12 @@ const MusicPlayer = () => {
       artist: "DubDown",
       url: "/music/snow-132947.mp3",
     },
-  ];
-  const [sourceIndex, setSourceIndex] = useState<number>(0);
+  ]);
+
+  const [sourceIndex, setSourceIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
 
-  const audioRef = useRef(new Audio(sourceObject[sourceIndex].url));
+  const audioRef = useRef(new Audio());
 
   const playMusic = () => {
     setIsPlaying(true);
@@ -54,21 +55,16 @@ const MusicPlayer = () => {
     if (isPlaying) {
       audioRef.current.play();
     }
-  }, [sourceIndex]);
+  }, [sourceIndex, isPlaying, sourceObject]);
 
   useEffect(() => {
     if (audioRef && audioRef.current) {
-      console.log("added");
-      audioRef.current.addEventListener("ended", () => {
-        console.log("ended");
-        playNext();
-      });
+      audioRef.current.addEventListener("ended", () => playNext());
     }
-
-    return () => {
-      audioRef.current.removeEventListener("ended", playNext);
-    };
-  }, []);
+    return audioRef.current.removeEventListener("ended", () =>
+      audioRef.current.pause()
+    );
+  });
 
   return (
     <div className="z-70 fixed bottom-8 right-0 hidden px-8 sm:block">

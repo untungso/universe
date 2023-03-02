@@ -1,4 +1,13 @@
-import { Heading, Section, StyledCode, Title } from "@/components";
+import {
+  AltButton,
+  Debug,
+  Heading,
+  PrimaryButton,
+  SecondaryButton,
+  Section,
+  StyledCode,
+  Title,
+} from "@/components";
 
 import type { Metadata } from "next";
 
@@ -11,12 +20,27 @@ export default function AtomDebug() {
   return (
     <div className="max-w-[640px] p-4">
       <Section>
-        <StyledCode>UiDebug</StyledCode>
-        <Title>Atom</Title>
+        <Debug>
+          <StyledCode>UiDebug</StyledCode>
+          <Title>Atom</Title>
+        </Debug>
       </Section>
       <Section>
         <StyledCode>Button</StyledCode>
-        <Heading>🚧 Under Construction 🚧</Heading>
+        <div className="flex flex-col items-start justify-start gap-6">
+          <Debug>
+            <StyledCode>PrimaryButton</StyledCode>
+            <PrimaryButton>Hello Primary Button</PrimaryButton>
+          </Debug>
+          <Debug>
+            <StyledCode>SecondaryButton</StyledCode>
+            <SecondaryButton>Hello Secondary Button</SecondaryButton>
+          </Debug>
+          <Debug>
+            <StyledCode>AltButton</StyledCode>
+            <AltButton>Hello Alt Button</AltButton>
+          </Debug>
+        </div>
       </Section>
       <Section>
         <StyledCode>Input</StyledCode>

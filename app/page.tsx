@@ -5,6 +5,7 @@ import {
   Paragraph,
   InsteadLogo,
   StyledCode,
+  PrimaryButton,
 } from "@/components";
 
 import Link from "next/link";
@@ -37,9 +38,7 @@ export default function Root() {
         untuk diskusi lebih lanjut.
       </Paragraph>
       <Link href={`/ui-debug`}>
-        <button className="text-md box-shadow rounded-md border-2 border-slate-12 bg-slate-1 px-6 py-2 font-semibold drop-shadow-md hover:drop-shadow-lg">
-          Mulai
-        </button>
+        <PrimaryButton>Mulai</PrimaryButton>
       </Link>
     </main>
   );

@@ -5,5 +5,5 @@ interface SectionProps {
 }
 
 export const Section = (props: SectionProps) => {
-  return <div>{props.children}</div>;
+  return <div className="py-6">{props.children}</div>;
 };
