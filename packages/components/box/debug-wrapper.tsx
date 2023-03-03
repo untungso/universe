@@ -1,7 +1,7 @@
-import type { ReactNode } from "react";
+import * as React from "react";
 
 interface DebugProps {
-  children: ReactNode | ReactNode[];
+  children: React.ReactNode | React.ReactNode[];
 }
 export const Debug = (props: DebugProps) => {
   return (

@@ -28,14 +28,16 @@ export default function UIDebugLayout({ children }: { children: ReactNode }) {
         </Debug>
       </nav>
       {children}
-      <footer className="bg-slate-12 pb-8 text-slate-1">
-        <div className="px-4">
-          <StyledCode>Footer</StyledCode>
-          <p className="text-3xl">🇮🇩</p>
-          <p className="font-mono font-light">Mad Respect,</p>
-          <p className="font-sans text-sm font-black">Team Malah Ngoding</p>
-        </div>
-      </footer>
+      <div className="m-4 rounded-xl border-2 border-slate-12 p-2">
+        <footer className="m-2 rounded-xl text-slate-12">
+          <div className="p-2">
+            <StyledCode>Footer</StyledCode>
+            <p className="text-3xl">🇮🇩</p>
+            <p className="font-mono font-light">Mad Respect,</p>
+            <p className="font-sans text-sm font-black">Team Malah Ngoding</p>
+          </div>
+        </footer>
+      </div>
     </div>
   );
 }

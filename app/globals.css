@@ -2,50 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --slate1: #fbfcfd;
-    --slate2: #f8f9fa;
-    --slate3: #f1f3f5;
-    --slate4: #eceef0;
-    --slate5: #e6e8eb;
-    --slate6: #dfe3e6;
-    --slate7: #d7dbdf;
-    --slate8: #c1c8cd;
-    --slate9: #889096;
-    --slate10: #7e868c;
-    --slate11: #687076;
-    --slate12: #11181c;
-  }
+:root {
+  --slate1: #fbfcfd;
+  --slate2: #f8f9fa;
+  --slate10: #7e868c;
+  --slate12: #11181c;
+}
 
-  ::selection {
-    background-color: #ffbd12;
-    color: #fefefe;
-  }
+::selection {
+  background-color: #ffbd12;
+  color: var(--slate1);
+}
 
-  html {
-    scroll-behavior: smooth;
-    background-color: var(--slate2);
-  }
+html {
+  scroll-behavior: smooth;
+  background-color: var(--slate2);
+}
 
-  video::-webkit-media-controls {
-    display: none !important;
-  }
+video::-webkit-media-controls {
+  display: none !important;
+}
 
-  body::-webkit-scrollbar {
-    width: 8px;
-  }
+body::-webkit-scrollbar {
+  width: 8px;
+}
 
-  body::-webkit-scrollbar-track {
-    border-left: 1px solid #000000;
-    background: #f9f9f9;
-  }
+body::-webkit-scrollbar-track {
+  border-left: 1px solid var(--slate12);
+  background: var(--slate1);
+}
 
-  body::-webkit-scrollbar-thumb {
-    background: var(--slate10);
-  }
+body::-webkit-scrollbar-thumb {
+  background: var(--slate10);
+}
 
-  body::-webkit-scrollbar-thumb:hover {
-    background: var(--slate12);
-  }
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--slate12);
 }

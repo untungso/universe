@@ -6,6 +6,7 @@ import {
   SecondaryButton,
   Section,
   StyledCode,
+  TextInput,
   Title,
 } from "@/components";
 
@@ -44,7 +45,7 @@ export default function AtomDebug() {
       </Section>
       <Section>
         <StyledCode>Input</StyledCode>
-        <Heading>🚧 Under Construction 🚧</Heading>
+        <TextInput />
       </Section>
       <Section>
         <StyledCode>Radio</StyledCode>

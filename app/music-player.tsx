@@ -67,62 +67,47 @@ const MusicPlayer = () => {
   });
 
   return (
-    <div className="z-70 fixed bottom-8 right-0 hidden px-8 sm:block">
-      <div className="relative duration-100 ">
-        <button className="absolute -top-5 -right-5 z-30 flex h-10 w-10 transform items-center justify-center overflow-hidden rounded-full border-2 border-slate-12 bg-slate-1 text-slate-12 duration-300 hover:scale-110 active:scale-95">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="fill-current w-3"
-            viewBox="0 0 24 24"
+    <div className="flex">
+      <svg
+        className={`m-4 h-5 w-5 bg-slate-12 ${
+          isPlaying ? "motion-safe:animate-spin" : ""
+        }`}
+        viewBox="0 0 24 24"
+      >
+        {`className`}
+      </svg>
+      <div className="flex w-40 flex-col justify-center pl-4 text-left">
+        <h3 className="text-md z-50 truncate font-sans font-bold uppercase text-slate-12">
+          {sourceObject[sourceIndex].title}
+        </h3>
+        <h4 className="0 z-50 truncate font-mono text-xs uppercase text-slate-10">
+          {sourceObject[sourceIndex].artist}
+        </h4>
+      </div>
+      <div className="mr-2 grid w-36 grid-cols-3 rounded-md">
+        <div className="flex items-center justify-center">
+          <button
+            className="flex h-8 w-8 items-center justify-center hover:scale-110 active:scale-95"
+            onClick={playPrevious}
           >
-            <path d="M0 10h24v4h-24z"></path>
-          </svg>
-        </button>
-        <div className="relative flex h-14 rounded-md  border-2 border-slate-12 bg-slate-1 shadow-md duration-300">
-          <div className="flex">
-            <svg
-              className={`m-4 h-5 w-5 bg-slate-12 ${
-                isPlaying ? "motion-safe:animate-spin" : ""
-              }`}
-              viewBox="0 0 24 24"
-            >
-              {`className`}
-            </svg>
-            <div className="flex w-40 flex-col justify-center pl-4 text-left">
-              <h3 className="text-md z-50 truncate font-sans font-bold uppercase text-slate-12">
-                {sourceObject[sourceIndex].title}
-              </h3>
-              <h4 className="0 z-50 truncate font-mono text-xs uppercase text-slate-10">
-                {sourceObject[sourceIndex].artist}
-              </h4>
-            </div>
-            <div className="mr-2 grid w-36 grid-cols-3 rounded-md">
-              <div className="flex items-center justify-center">
-                <button
-                  className="flex h-8 w-8 transform items-center justify-center hover:scale-110 active:scale-95"
-                  onClick={playPrevious}
-                >
-                  <SkipBackIcon />
-                </button>
-              </div>
-              <div id="pause" className="flex items-center justify-center">
-                <button
-                  className="flex h-10 w-10 transform items-center justify-center rounded-full hover:scale-110 active:scale-95"
-                  onClick={isPlaying ? pauseMusic : playMusic}
-                >
-                  {isPlaying ? <PauseIcon /> : <PlayIcon />}
-                </button>
-              </div>
-              <div className="flex items-center justify-center">
-                <button
-                  className="flex h-8 w-8 transform items-center justify-center hover:scale-110 active:scale-95"
-                  onClick={playNext}
-                >
-                  <SkipForwardIcon />
-                </button>
-              </div>
-            </div>
-          </div>
+            <SkipBackIcon />
+          </button>
+        </div>
+        <div id="pause" className="flex items-center justify-center">
+          <button
+            className="flex h-10 w-10 items-center justify-center rounded-full hover:scale-110 active:scale-95"
+            onClick={isPlaying ? pauseMusic : playMusic}
+          >
+            {isPlaying ? <PauseIcon /> : <PlayIcon />}
+          </button>
+        </div>
+        <div className="flex items-center justify-center">
+          <button
+            className="flex h-8 w-8 items-center justify-center hover:scale-110 active:scale-95"
+            onClick={playNext}
+          >
+            <SkipForwardIcon />
+          </button>
         </div>
       </div>
     </div>

@@ -1,5 +1,7 @@
+import * as React from "react";
+
 interface TextProps {
-  children: any;
+  children: React.ReactNode | React.ReactNode[];
 }
 export const Paragraph = (props: TextProps) => {
   return (
