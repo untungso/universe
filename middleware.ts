@@ -5,6 +5,18 @@ import { i18n } from "@/utils";
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
+  if (
+    [
+      "/assets/512x512.png",
+      "/music/cyber-war-126419.mp3",
+      "/music/snow-132947.mp3",
+      "/music/space-120280.mp3",
+      "/favicon.ico",
+      "/robots.txt",
+    ].includes(pathname)
+  )
+    return;
+
   const pathnameIsMissingLocale = i18n.locales.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   );
