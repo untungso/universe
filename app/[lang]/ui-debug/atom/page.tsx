@@ -44,12 +44,14 @@ export default function AtomDebug() {
         </div>
       </Section>
       <Section>
-        <StyledCode>Input</StyledCode>
-        <Heading>🚧 Under Construction 🚧</Heading>
+        <Debug>
+          <StyledCode>Input</StyledCode>
+          <TextInput placeholder="Hello Placeholder Text"/>
+        </Debug>
       </Section>
       <Section>
-        <StyledCode>Radio</StyledCode>
-        <Heading>🚧 Under Construction 🚧</Heading>
+          <StyledCode>Radio</StyledCode>
+          <Heading>🚧 Under Construction 🚧</Heading>
       </Section>
       <Section>
         <StyledCode>Checkboxes</StyledCode>
