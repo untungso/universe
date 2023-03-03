@@ -45,11 +45,11 @@ export default function AtomDebug() {
       </Section>
       <Section>
         <StyledCode>Input</StyledCode>
-        <TextInput />
+        <Heading>🚧 Under Construction 🚧</Heading>
       </Section>
       <Section>
         <StyledCode>Radio</StyledCode>
-        <Heading>🚧 Uner Construction 🚧</Heading>
+        <Heading>🚧 Under Construction 🚧</Heading>
       </Section>
       <Section>
         <StyledCode>Checkboxes</StyledCode>
