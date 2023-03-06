@@ -3,6 +3,7 @@ import {
   Debug,
   Heading,
   PrimaryButton,
+  RadioInput,
   SecondaryButton,
   Section,
   StyledCode,
@@ -46,12 +47,21 @@ export default function AtomDebug() {
       <Section>
         <Debug>
           <StyledCode>Input</StyledCode>
-          <TextInput placeholder="Hello Placeholder Text"/>
+          <TextInput placeholder="Hello Placeholder Text" />
         </Debug>
       </Section>
       <Section>
+        <Debug>
           <StyledCode>Radio</StyledCode>
-          <Heading>🚧 Under Construction 🚧</Heading>
+          <RadioInput
+            name="Programming Language"
+            data={[
+              { label: "Go", key: "go-lang" },
+              { label: "Rust", key: "rust-lang" },
+              { label: "Javasript", key: "js" },
+            ]}
+          />
+        </Debug>
       </Section>
       <Section>
         <StyledCode>Checkboxes</StyledCode>
