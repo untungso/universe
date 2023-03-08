@@ -59,8 +59,8 @@ export default function AtomDebug() {
             name="Nicest Chips"
             data={[
               { label: "Walker", key: "wanker" },
-              { label: "GB21U", key: "part ot nnmy machine" },
-              { label: "Walker", key: "wanker" },
+              { label: "Wad", key: "part ot nnmy machine" },
+              { label: "Blit", key: "wanker" },
             ]}
           />
         </Debug>
