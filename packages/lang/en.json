@@ -4,5 +4,9 @@
     "welcome": "Welcome to the world of,",
     "first": "Welcome. We are a practical platform for everyone willing to write code. We're hoping that this platform could assist you Friends of <strong>Malah Ngoding</strong> to learn and grow yourself",
     "second": "Malah Ngoding also helps to build your digital product. Please contact us at <a href=mailto:\"malahngoding@gmail.com\">malahngoding@gmail.com</a> for further enquiries."
+  },
+  "ipsum": {
+    "title": "How vexingly quick daft zebras jump!",
+    "paragraph": "\"<strong>The quick brown fox jumps over the lazy dog</strong>\" is an English-language pangram — a sentence that contains all the letters of the alphabet. The phrase is commonly used for touch-typing practice, testing typewriters and computer keyboards, displaying examples of fonts, and other applications involving text where the use of all letters in the alphabet is desired."
   }
 }

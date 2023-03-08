@@ -18,6 +18,7 @@ export default async function Root({
   params: { lang: Locale };
 }) {
   const dictionary = await getDictionary(lang);
+
   return (
     <main className="max-w-[640px] p-4">
       <StyledCode>LocaleSwitcher</StyledCode>

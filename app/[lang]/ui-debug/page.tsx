@@ -7,6 +7,7 @@ import {
   Section,
   Title,
 } from "@/components";
+import { Locale, getDictionary } from "@/utils";
 
 import type { Metadata } from "next";
 
@@ -15,7 +16,13 @@ export const metadata: Metadata = {
   description: "Lupa Makan, Lupa Tidur, Malah Ngoding",
 };
 
-export default function TokenDebug() {
+export default async function TokenDebug({
+  params: { lang },
+}: {
+  params: { lang: Locale };
+}) {
+  const dictionary = await getDictionary(lang);
+
   return (
     <div className="max-w-[640px] p-4">
       <Section>
@@ -28,27 +35,15 @@ export default function TokenDebug() {
       </Section>
       <Section>
         <StyledCode>Title</StyledCode>
-        <Title>
-          Sebegitu perjakanya si Qozy baca faidah sinar X di mobil VW.
-        </Title>
-
+        <Title>{dictionary["ipsum"].title}</Title>
         <StyledCode>SubTitle</StyledCode>
-        <SubTitle>
-          Gatotkaca beri Pergiwa zamrud hijau xifoid, asli punya Van Queen.
-        </SubTitle>
+        <SubTitle>{dictionary["ipsum"].title}</SubTitle>
 
         <StyledCode>Heading</StyledCode>
-        <Heading>
-          Muharjo seorang xenofobia universal yang takut pada warga jazirah,
-          contohnya Qatar.
-        </Heading>
+        <Heading>{dictionary["ipsum"].title}</Heading>
 
         <StyledCode>Paragraph</StyledCode>
-        <Paragraph>
-          {
-            "<strong>Lorem ipsum</strong>, atau ringkasnya lipsum, adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis atau presentasi visual seperti font, tipografi, dan tata letak. Maksud penggunaan lipsum adalah agar pengamat tidak terlalu berkonsentrasi kepada arti harfiah per kalimat, melainkan lebih kepada elemen desain dari teks yang dipresentasi."
-          }
-        </Paragraph>
+        <Paragraph>{dictionary["ipsum"].paragraph}</Paragraph>
       </Section>
       <Section>
         <StyledCode>ColorSlate</StyledCode>
