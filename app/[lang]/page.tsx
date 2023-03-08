@@ -34,7 +34,7 @@ export default async function Root({
       <Paragraph>{dictionary["landing"].first}</Paragraph>
       <StyledCode>Paragraph</StyledCode>
       <Paragraph>{dictionary["landing"].second}</Paragraph>
-      <Link href={`/ui-debug`}>
+      <Link href={`/${lang}/ui-debug`}>
         <PrimaryButton>{dictionary["landing"].greetings}</PrimaryButton>
       </Link>
     </main>

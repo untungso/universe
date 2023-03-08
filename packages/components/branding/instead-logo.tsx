@@ -12,6 +12,7 @@ export const InsteadLogo = (props: LogoProps) => {
       height={128 * props.scale}
       width={128 * props.scale}
       alt="Malah Ngoding Logo"
+      priority={true}
     />
   );
 };

@@ -15,6 +15,7 @@
 }
 
 html {
+  zoom: 0.85;
   scroll-behavior: smooth;
   background-color: var(--slate2);
 }

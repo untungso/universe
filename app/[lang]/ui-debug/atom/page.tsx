@@ -1,5 +1,6 @@
 import {
   AltButton,
+  CheckBoxInput,
   Debug,
   Heading,
   PrimaryButton,
@@ -22,50 +23,47 @@ export default function AtomDebug() {
   return (
     <div className="max-w-[640px] p-4">
       <Section>
-        <Debug>
-          <StyledCode>UiDebug</StyledCode>
-          <Title>Atom</Title>
-        </Debug>
+        <StyledCode>UiDebug</StyledCode>
+        <Title>Atom</Title>
       </Section>
       <Section>
         <StyledCode>Button</StyledCode>
         <div className="flex flex-col items-start justify-start gap-6">
-          <Debug>
-            <StyledCode>PrimaryButton</StyledCode>
-            <PrimaryButton>Hello Primary Button</PrimaryButton>
-          </Debug>
-          <Debug>
-            <StyledCode>SecondaryButton</StyledCode>
-            <SecondaryButton>Hello Secondary Button</SecondaryButton>
-          </Debug>
-          <Debug>
-            <StyledCode>AltButton</StyledCode>
-            <AltButton>Hello Alt Button</AltButton>
-          </Debug>
+          <StyledCode>PrimaryButton</StyledCode>
+          <PrimaryButton>Hello Primary Button</PrimaryButton>
+          <StyledCode>SecondaryButton</StyledCode>
+          <SecondaryButton>Hello Secondary Button</SecondaryButton>
+          <StyledCode>AltButton</StyledCode>
+          <AltButton>Hello Alt Button</AltButton>
         </div>
       </Section>
       <Section>
-        <Debug>
-          <StyledCode>Input</StyledCode>
-          <TextInput placeholder="Hello Placeholder Text" />
-        </Debug>
+        <StyledCode>Input</StyledCode>
+        <TextInput placeholder="Hello Placeholder Text" />
       </Section>
       <Section>
-        <Debug>
-          <StyledCode>Radio</StyledCode>
-          <RadioInput
-            name="Programming Language"
+        <StyledCode>Radio</StyledCode>
+        <RadioInput
+          name="Programming Language"
+          data={[
+            { label: "Go", key: "go-lang" },
+            { label: "Rust", key: "rust-lang" },
+            { label: "Javasript", key: "js" },
+          ]}
+        />
+      </Section>
+      <Section>
+        <Debug debugString="<Checkboxes/>">
+          <StyledCode>Checkboxes</StyledCode>
+          <CheckBoxInput
+            name="Nicest Chips"
             data={[
-              { label: "Go", key: "go-lang" },
-              { label: "Rust", key: "rust-lang" },
-              { label: "Javasript", key: "js" },
+              { label: "Walker", key: "wanker" },
+              { label: "GB21U", key: "part ot nnmy machine" },
+              { label: "Walker", key: "wanker" },
             ]}
           />
         </Debug>
-      </Section>
-      <Section>
-        <StyledCode>Checkboxes</StyledCode>
-        <Heading>🚧 Under Construction 🚧</Heading>
       </Section>
       <Section>
         <StyledCode>Select</StyledCode>

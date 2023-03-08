@@ -1,3 +1,5 @@
+"use client";
+
 // Box Components
 export * from "./box/section";
 export * from "./box/debug-wrapper";
