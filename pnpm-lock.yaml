@@ -1,10 +1,13 @@
 lockfileVersion: 5.4
 
 specifiers:
+  "@headlessui/react": ^1.7.13
+  "@heroicons/react": ^2.0.16
   "@types/node": ^18.14.6
   "@types/react": ^18.0.28
   "@types/react-dom": ^18.0.11
   "@typescript-eslint/eslint-plugin": ^5.54.1
+  "@typescript-eslint/parser": ^5.54.1
   autoprefixer: ^10.4.13
   eslint: ^8.35.0
   eslint-config-next: ^13.2.3
@@ -15,19 +18,24 @@ specifiers:
   prettier-plugin-tailwindcss: ^0.2.4
   react: ^18.2.0
   react-dom: ^18.2.0
+  solid: link:@heroicons/react/20/solid
   tailwindcss: ^3.2.7
   typescript: ^4.9.5
 
 dependencies:
+  "@headlessui/react": 1.7.13_biqbaboplfbrettd7655fr4n2y
+  "@heroicons/react": 2.0.16_react@18.2.0
   next: 13.2.3_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  solid: link:@heroicons/react/20/solid
 
 devDependencies:
   "@types/node": 18.14.6
   "@types/react": 18.0.28
   "@types/react-dom": 18.0.11
-  "@typescript-eslint/eslint-plugin": 5.54.1_ycpbpc6yetojsgtrx3mwntkhsu
+  "@typescript-eslint/eslint-plugin": 5.54.1_mlk7dnz565t663n4razh6a6v6i
+  "@typescript-eslint/parser": 5.54.1_ycpbpc6yetojsgtrx3mwntkhsu
   autoprefixer: 10.4.13_postcss@8.4.21
   eslint: 8.35.0
   eslint-config-next: 13.2.3_ycpbpc6yetojsgtrx3mwntkhsu
@@ -76,6 +84,32 @@ packages:
       }
     engines: { node: ^12.22.0 || ^14.17.0 || >=16.0.0 }
     dev: true
+
+  /@headlessui/react/1.7.13_biqbaboplfbrettd7655fr4n2y:
+    resolution:
+      {
+        integrity: sha512-9n+EQKRtD9266xIHXdY5MfiXPDfYwl7zBM7KOx2Ae3Gdgxy8QML1FkCMjq6AsOf0l6N9uvI4HcFtuFlenaldKg==,
+      }
+    engines: { node: ">=10" }
+    peerDependencies:
+      react: ^16 || ^17 || ^18
+      react-dom: ^16 || ^17 || ^18
+    dependencies:
+      client-only: 0.0.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@heroicons/react/2.0.16_react@18.2.0:
+    resolution:
+      {
+        integrity: sha512-x89rFxH3SRdYaA+JCXwfe+RkE1SFTo9GcOkZettHer71Y3T7V+ogKmfw5CjTazgS3d0ClJ7p1NA+SP7VQLQcLw==,
+      }
+    peerDependencies:
+      react: ">= 16"
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /@humanwhocodes/config-array/0.11.8:
     resolution:
@@ -401,7 +435,7 @@ packages:
       }
     dev: true
 
-  /@typescript-eslint/eslint-plugin/5.54.1_ycpbpc6yetojsgtrx3mwntkhsu:
+  /@typescript-eslint/eslint-plugin/5.54.1_mlk7dnz565t663n4razh6a6v6i:
     resolution:
       {
         integrity: sha512-a2RQAkosH3d3ZIV08s3DcL/mcGc2M/UC528VkPULFxR9VnVPT8pBu0IyBAJJmVsCmhVfwQX1v6q+QGnmSe1bew==,
@@ -415,6 +449,7 @@ packages:
       typescript:
         optional: true
     dependencies:
+      "@typescript-eslint/parser": 5.54.1_ycpbpc6yetojsgtrx3mwntkhsu
       "@typescript-eslint/scope-manager": 5.54.1
       "@typescript-eslint/type-utils": 5.54.1_ycpbpc6yetojsgtrx3mwntkhsu
       "@typescript-eslint/utils": 5.54.1_ycpbpc6yetojsgtrx3mwntkhsu
