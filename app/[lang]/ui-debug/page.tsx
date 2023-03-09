@@ -6,7 +6,7 @@ import {
   SubTitle,
   Section,
   Title,
-} from "@/components";
+} from "@/components/server";
 import { Locale, getDictionary } from "@/utils";
 
 import type { Metadata } from "next";
@@ -38,10 +38,8 @@ export default async function TokenDebug({
         <Title>{dictionary["ipsum"].title}</Title>
         <StyledCode>SubTitle</StyledCode>
         <SubTitle>{dictionary["ipsum"].title}</SubTitle>
-
         <StyledCode>Heading</StyledCode>
         <Heading>{dictionary["ipsum"].title}</Heading>
-
         <StyledCode>Paragraph</StyledCode>
         <Paragraph>{dictionary["ipsum"].paragraph}</Paragraph>
       </Section>

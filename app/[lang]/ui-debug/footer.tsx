@@ -1,6 +1,4 @@
-"use client";
-
-import { StyledCode } from "@/components";
+import { StyledCode } from "@/components/server";
 
 export const Footer = () => {
   return (

@@ -1,6 +1,6 @@
 "use client";
 
-import { InsteadLogo, StyledCode } from "@/components";
+import { InsteadLogo, StyledCode } from "@/components/server";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -19,8 +19,8 @@ export const NavigationBar = () => {
         <div className="flex flex-col">
           <StyledCode>NavigationMenu</StyledCode>
           <div className="flex flex-row gap-4">
-            <Link href={`/ui-debug`}>Token</Link>
-            <Link href={`/ui-debug/atom`}>Atom</Link>
+            <Link href={`/${locale}/ui-debug`}>Token</Link>
+            <Link href={`/${locale}/ui-debug/atom`}>Atom</Link>
           </div>
         </div>
       </div>

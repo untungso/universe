@@ -3,6 +3,8 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
+import { Locale } from "@/utils";
+
 const LocaleSwitcher = () => {
   const pathName = usePathname();
   const redirectedPathName = (locale: string) => {
@@ -11,11 +13,23 @@ const LocaleSwitcher = () => {
     segments[1] = locale;
     return segments.join("/");
   };
+  const getCurrentLocale = (): Locale => {
+    const segments = pathName.split("/")[1];
+    if (segments === "id") {
+      return "en";
+    } else {
+      return "id";
+    }
+  };
 
   return (
     <div className="my-4 h-auto w-12 border-2 border-slate-12 shadow-lg">
-      <Link href={redirectedPathName(pathName === "/id" ? "en" : "id")}>
-        {pathName === "/id" ? <IndonesianFlag /> : <UnitedKingdomFlag />}
+      <Link href={redirectedPathName(getCurrentLocale())}>
+        {getCurrentLocale() === "en" ? (
+          <IndonesianFlag />
+        ) : (
+          <UnitedKingdomFlag />
+        )}
       </Link>
     </div>
   );

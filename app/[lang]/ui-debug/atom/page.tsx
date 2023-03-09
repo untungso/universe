@@ -1,16 +1,16 @@
+import { Suspense } from "react";
 import {
   AltButton,
   CheckBoxInput,
-  Debug,
-  Heading,
+  SelectInput,
   PrimaryButton,
   RadioInput,
   SecondaryButton,
-  Section,
-  StyledCode,
   TextInput,
-  Title,
-} from "@/components";
+  Debug,
+} from "@/components/client";
+import { Section, StyledCode, Title } from "@/components/server";
+import LocaleSwitcher from "../../locale-switcher";
 
 import type { Metadata } from "next";
 
@@ -25,6 +25,12 @@ export default function AtomDebug() {
       <Section>
         <StyledCode>UiDebug</StyledCode>
         <Title>Atom</Title>
+      </Section>
+      <Section>
+        <StyledCode>LocaleSwitcher</StyledCode>
+        <Suspense>
+          <LocaleSwitcher />
+        </Suspense>
       </Section>
       <Section>
         <StyledCode>Button</StyledCode>
@@ -58,16 +64,16 @@ export default function AtomDebug() {
           <CheckBoxInput
             name="Nicest Chips"
             data={[
-              { label: "Walker", key: "wanker" },
-              { label: "Wad", key: "part ot nnmy machine" },
-              { label: "Blit", key: "wanker" },
+              { label: "Walker", key: "walker" },
+              { label: "Tyler's", key: "tylers" },
+              { label: "Chitato", key: "chitato" },
             ]}
           />
         </Debug>
       </Section>
       <Section>
         <StyledCode>Select</StyledCode>
-        <Heading>🚧 Under Construction 🚧</Heading>
+        <SelectInput />
       </Section>
     </div>
   );

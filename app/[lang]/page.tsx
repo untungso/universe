@@ -5,8 +5,8 @@ import {
   Paragraph,
   InsteadLogo,
   StyledCode,
-  PrimaryButton,
-} from "@/components";
+} from "@/components/server";
+import { PrimaryButton } from "@/components/client";
 import { Locale, getDictionary } from "@/utils";
 
 import Link from "next/link";

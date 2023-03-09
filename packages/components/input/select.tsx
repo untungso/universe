@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export const Select = () => {
+export const SelectInput = () => {
   return (
     <div>
       <div>Select</div>
