@@ -47,7 +47,7 @@ const FlyingFooter = () => {
   return (
     <div className="fixed bottom-0 h-8 w-screen">
       <div className="flex w-full flex-row items-center justify-center">
-        <p className="text-xs">Ma</p>
+        <p className="text-xs">Lupa Makan, Lupa Tidur, Malah Ngoding</p>
       </div>
     </div>
   );
