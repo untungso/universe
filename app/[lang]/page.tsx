@@ -38,6 +38,17 @@ export default async function Root({
       <Link href={`/${lang}/ui-debug`}>
         <PrimaryButton>{dictionary["landing"].greetings}</PrimaryButton>
       </Link>
+      <FlyingFooter />
     </main>
   );
 }
+
+const FlyingFooter = () => {
+  return (
+    <div className="fixed bottom-0 h-8 w-screen">
+      <div className="flex w-full flex-row items-center justify-center">
+        <p className="text-xs">Ma</p>
+      </div>
+    </div>
+  );
+};

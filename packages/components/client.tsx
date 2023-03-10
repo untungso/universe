@@ -11,3 +11,5 @@ export * from "./input/checkbox";
 export * from "./input/radio";
 export * from "./input/select";
 export * from "./input/text";
+// Three
+export * from "./three/example";
