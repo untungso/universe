@@ -3,8 +3,10 @@ lockfileVersion: 5.4
 specifiers:
   "@headlessui/react": ^1.7.13
   "@heroicons/react": ^2.0.16
+  "@next/mdx": ^13.2.4
   "@react-three/drei": ^9.57.1
   "@react-three/fiber": ^8.12.0
+  "@types/mdx": ^2.0.3
   "@types/node": ^18.14.6
   "@types/react": ^18.0.28
   "@types/react-dom": ^18.0.11
@@ -22,7 +24,6 @@ specifiers:
   prettier-plugin-tailwindcss: ^0.2.4
   react: ^18.2.0
   react-dom: ^18.2.0
-  react-three-fiber: ^6.0.13
   tailwindcss: ^3.2.7
   three: ^0.150.1
   typescript: ^4.9.5
@@ -30,13 +31,14 @@ specifiers:
 dependencies:
   "@headlessui/react": 1.7.13_biqbaboplfbrettd7655fr4n2y
   "@heroicons/react": 2.0.16_react@18.2.0
+  "@next/mdx": 13.2.4
   "@react-three/drei": 9.57.1_u3iila23zl7kxrjj2wxuc6ojr4
   "@react-three/fiber": 8.12.0_73epb4osyabtjyiaeamriercbi
+  "@types/mdx": 2.0.3
   "@types/three": 0.149.0
   next: 13.2.3_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  react-three-fiber: 6.0.13_73epb4osyabtjyiaeamriercbi
   three: 0.150.1
 
 devDependencies:
@@ -199,6 +201,23 @@ packages:
     dependencies:
       glob: 7.1.7
     dev: true
+
+  /@next/mdx/13.2.4:
+    resolution:
+      {
+        integrity: sha512-inl7u+OEa4Ok3uL052oa8EDw1bUkMGLVKzFfVBIgG19s29gxQvcWYzxa5t438J31ljApjh6Y5k4AD6yLaCAlQw==,
+      }
+    peerDependencies:
+      "@mdx-js/loader": ">=0.15.0"
+      "@mdx-js/react": ">=0.15.0"
+    peerDependenciesMeta:
+      "@mdx-js/loader":
+        optional: true
+      "@mdx-js/react":
+        optional: true
+    dependencies:
+      source-map: 0.7.4
+    dev: false
 
   /@next/swc-android-arm-eabi/13.2.3:
     resolution:
@@ -584,6 +603,13 @@ packages:
         integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==,
       }
     dev: true
+
+  /@types/mdx/2.0.3:
+    resolution:
+      {
+        integrity: sha512-IgHxcT3RC8LzFLhKwP3gbMPeaK7BM9eBH46OdapPA7yvuIUJ8H6zHZV53J8hGZcTSnt95jANt+rTBNUUc22ACQ==,
+      }
+    dev: false
 
   /@types/node/18.14.6:
     resolution:
@@ -3517,31 +3543,6 @@ packages:
       scheduler: 0.21.0
     dev: false
 
-  /react-three-fiber/6.0.13_73epb4osyabtjyiaeamriercbi:
-    resolution:
-      {
-        integrity: sha512-uShQnkMVLvnzwf3YzY9mnzCnpmLpvTQkc0ycrtwk8fyjXmZt2695tLn3tufPF6uxq06UKJRKJcjCVCMXyUcEPQ==,
-      }
-    deprecated: react-three-fiber has been deprecated, please use @react-three/fiber from now on
-    peerDependencies:
-      react: ">=17.0"
-      react-dom: ">=17.0"
-      three: ">=0.126"
-    peerDependenciesMeta:
-      react-dom:
-        optional: true
-    dependencies:
-      "@react-three/fiber": 8.12.0_73epb4osyabtjyiaeamriercbi
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-      three: 0.150.1
-    transitivePeerDependencies:
-      - expo
-      - expo-asset
-      - expo-gl
-      - react-native
-    dev: false
-
   /react-use-measure/2.1.1_biqbaboplfbrettd7655fr4n2y:
     resolution:
       {
@@ -3784,6 +3785,14 @@ packages:
         integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==,
       }
     engines: { node: ">=0.10.0" }
+
+  /source-map/0.7.4:
+    resolution:
+      {
+        integrity: sha512-l3BikUxvPOcn5E74dZiq5BGsTb5yEwhaTSzccU6t4sDOH8NWJCstKO5QT2CvtFoK6F0saL7p9xHAqHOlCPJygA==,
+      }
+    engines: { node: ">= 8" }
+    dev: false
 
   /stats.js/0.17.0:
     resolution:

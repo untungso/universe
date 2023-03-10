@@ -11,6 +11,7 @@ import {
 } from "@/components/client";
 import { Section, StyledCode, Title } from "@/components/server";
 import LocaleSwitcher from "../../locale-switcher";
+import HelloWorld from "./hello.mdx";
 
 import type { Metadata } from "next";
 
@@ -25,6 +26,9 @@ export default function AtomDebug() {
       <Section>
         <StyledCode>UiDebug</StyledCode>
         <Title>Atom</Title>
+      </Section>
+      <Section>
+        <HelloWorld />
       </Section>
       <Section>
         <StyledCode>LocaleSwitcher</StyledCode>
