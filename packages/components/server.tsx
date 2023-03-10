@@ -10,3 +10,4 @@ export * from "./typography/title";
 export * from "./typography/sub-title";
 export * from "./typography/heading";
 export * from "./typography/paragraph";
+export * from "./typography/safe-paragraph";

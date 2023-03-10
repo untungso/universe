@@ -1,10 +1,8 @@
 import {
   Heading,
-  InsteadLogo,
-  Paragraph,
+  SafeParagraph,
   StyledCode,
   SubTitle,
-  Section,
   Title,
 } from "@/components/server";
 import type { MDXComponents } from "mdx/types";
@@ -12,7 +10,19 @@ import type { MDXComponents } from "mdx/types";
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     h1: ({ children }) => {
-      return <h1>{children}</h1>;
+      return <Title>{children as string}</Title>;
+    },
+    h2: ({ children }) => {
+      return <SubTitle>{children as string}</SubTitle>;
+    },
+    h3: ({ children }) => {
+      return <Heading>{children as string}</Heading>;
+    },
+    h4: ({ children }) => {
+      return <StyledCode>{children as string}</StyledCode>;
+    },
+    p: ({ children }) => {
+      return <SafeParagraph>{children as string}</SafeParagraph>;
     },
     ...components,
   };
