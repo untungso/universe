@@ -27,7 +27,7 @@ export default function AtomDebug() {
         <StyledCode>UiDebug</StyledCode>
         <Title>Atom</Title>
       </Section>
-      <Section>
+      <Section className="prose lg:prose-xl">
         <HelloWorld />
       </Section>
       <Section>

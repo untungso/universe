@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prep": "node prep.js",
-    "dev": "npm run prep && next dev -p 5173",
+    "dev": "next dev -p 5173",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -18,12 +17,14 @@
     "@react-three/fiber": "^8.12.0",
     "@types/mdx": "^2.0.3",
     "@types/three": "^0.149.0",
+    "clsx": "^1.2.1",
     "next": "^13.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "three": "^0.150.1"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
     "@types/node": "^18.14.6",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
