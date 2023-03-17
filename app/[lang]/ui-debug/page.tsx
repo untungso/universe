@@ -1,13 +1,10 @@
 import {
-  Heading,
+  BaseLayout, Heading,
   InsteadLogo,
-  Paragraph,
-  StyledCode,
-  SubTitle,
-  Section,
-  Title,
+  Paragraph, Section, StyledCode,
+  SubTitle, Title
 } from "@/components/server";
-import { Locale, getDictionary } from "@/utils";
+import { getDictionary, Locale } from "@/utils";
 
 import type { Metadata } from "next";
 
@@ -24,7 +21,7 @@ export default async function TokenDebug({
   const dictionary = await getDictionary(lang);
 
   return (
-    <div className="max-w-[640px] p-4">
+    <BaseLayout>
       <Section>
         <StyledCode>UiDebug</StyledCode>
         <Title>Token</Title>
@@ -94,6 +91,6 @@ export default async function TokenDebug({
           <div className="h-12 w-12 border border-pink bg-pink" />
         </div>
       </Section>
-    </div>
+    </BaseLayout>
   );
 }

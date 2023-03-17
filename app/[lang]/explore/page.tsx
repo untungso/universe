@@ -1,14 +1,15 @@
-import { Suspense } from "react";
+import { BaseLayout } from "@/components/server";
 import dynamic from "next/dynamic";
+import { Suspense } from "react";
 
 const LazyExampleThreeJS = dynamic(() => import("@/components/three/example"));
 
 export default function ExplorePage() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center">
+    <BaseLayout>
       <Suspense>
         <LazyExampleThreeJS />
       </Suspense>
-    </div>
+    </BaseLayout>
   );
 }

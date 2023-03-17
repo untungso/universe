@@ -1,14 +1,9 @@
-import {
-  Heading,
-  SubTitle,
-  Title,
-  Paragraph,
-  InsteadLogo,
-  StyledCode,
-} from "@/components/server";
 import { PrimaryButton } from "@/components/client";
-import { Locale, getDictionary } from "@/utils";
-
+import {
+  BaseLayout, Heading, InsteadLogo, Paragraph, StyledCode, SubTitle,
+  Title
+} from "@/components/server";
+import { getDictionary, Locale } from "@/utils";
 import Link from "next/link";
 import LocaleSwitcher from "./locale-switcher";
 
@@ -20,7 +15,7 @@ export default async function Root({
   const dictionary = await getDictionary(lang);
 
   return (
-    <main className="max-w-[640px] p-4">
+    <BaseLayout>
       <StyledCode>LocaleSwitcher</StyledCode>
       <LocaleSwitcher />
       <StyledCode>Title</StyledCode>
@@ -39,7 +34,7 @@ export default async function Root({
         <PrimaryButton>{dictionary["landing"].greetings}</PrimaryButton>
       </Link>
       <FlyingFooter />
-    </main>
+    </BaseLayout>
   );
 }
 

@@ -1,15 +1,11 @@
-import { Suspense } from "react";
 import {
   AltButton,
-  CheckBoxInput,
-  SelectInput,
-  PrimaryButton,
+  CheckBoxInput, Debug, PrimaryButton,
   RadioInput,
-  SecondaryButton,
-  TextInput,
-  Debug,
+  SecondaryButton, SelectInput, TextInput
 } from "@/components/client";
-import { Section, StyledCode, Title } from "@/components/server";
+import { BaseLayout, Section, StyledCode, Title } from "@/components/server";
+import { Suspense } from "react";
 import LocaleSwitcher from "../../locale-switcher";
 import HelloWorld from "./hello.mdx";
 
@@ -22,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function AtomDebug() {
   return (
-    <div className="max-w-[640px] p-4">
+    <BaseLayout>
       <Section>
         <StyledCode>UiDebug</StyledCode>
         <Title>Atom</Title>
@@ -79,6 +75,6 @@ export default function AtomDebug() {
         <StyledCode>Select</StyledCode>
         <SelectInput />
       </Section>
-    </div>
+    </BaseLayout >
   );
 }
