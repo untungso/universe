@@ -39,7 +39,8 @@ export const SelectInput = () => {
                 <Listbox.Option
                   key={personIdx}
                   className={({ active }) =>
-                    `relative cursor-default select-none py-2 pl-10 pr-4 hover:cursor-pointer ${active ? "bg-pink-100 text-slate-12" : "text-slate-10"
+                    `relative cursor-default select-none py-2 pl-10 pr-4 hover:cursor-pointer ${
+                      active ? "bg-pink-100 text-slate-12" : "text-slate-10"
                     }`
                   }
                   value={person}
@@ -47,8 +48,9 @@ export const SelectInput = () => {
                   {({ selected }) => (
                     <>
                       <span
-                        className={`block truncate ${selected ? "font-medium" : "font-normal"
-                          }`}
+                        className={`block truncate ${
+                          selected ? "font-medium" : "font-normal"
+                        }`}
                       >
                         {person.name}
                       </span>
