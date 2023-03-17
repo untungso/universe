@@ -1,12 +1,12 @@
 {
-  "landing": {
-    "greetings": "Halo Semua!",
-    "welcome": "Selamat datang di dunia,",
-    "first": "Kami merupakan platform pembelajaran praktis untuk siapapun yang ingin menulis kode. Kami berharap platform ini bisa menjadi media untuk membantu teman <strong>Malah Ngoding</strong> belajar dan mengembangkan diri.",
-    "second": "Malah Ngoding juga menyediakan jasa konsultasi untuk projek digital kamu. Silahkan hubungi kami pada surel <a href=mailto:\"malahngoding@gmail.com\">malahngoding@gmail.com</a> untuk diskusi lebih lanjut."
-  },
-  "ipsum": {
-    "title": "Gatotkaca beri Pergiwa zamrud hijau xifoid, asli punya Van Queen.",
-    "paragraph": "<strong>Lorem ipsum</strong>, atau ringkasnya lipsum, adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis atau presentasi visual seperti font, tipografi, dan tata letak. Maksud penggunaan lipsum adalah agar pengamat tidak terlalu berkonsentrasi kepada arti harfiah per kalimat, melainkan lebih kepada elemen desain dari teks yang dipresentasi."
-  }
+    "landing": {
+        "greetings": "Halo Semua!",
+        "welcome": "Selamat datang di dunia,",
+        "first": "Kami merupakan platform pembelajaran praktis untuk siapapun yang ingin menulis kode. Kami berharap platform ini bisa menjadi media untuk membantu teman <strong>Malah Ngoding</strong> belajar dan mengembangkan diri.",
+        "second": "Malah Ngoding juga menyediakan jasa konsultasi untuk projek digital kamu. Silahkan hubungi kami pada surel <a href=mailto:\"malahngoding@gmail.com\">malahngoding@gmail.com</a> untuk diskusi lebih lanjut."
+    },
+    "ipsum": {
+        "title": "Gatotkaca beri Pergiwa zamrud hijau xifoid, asli punya Van Queen.",
+        "paragraph": "<strong>Lorem ipsum</strong>, atau ringkasnya lipsum, adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis atau presentasi visual seperti font, tipografi, dan tata letak. Maksud penggunaan lipsum adalah agar pengamat tidak terlalu berkonsentrasi kepada arti harfiah per kalimat, melainkan lebih kepada elemen desain dari teks yang dipresentasi."
+    }
 }

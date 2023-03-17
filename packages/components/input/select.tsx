@@ -1,7 +1,7 @@
-import * as React from "react";
-import { Fragment, useState } from "react";
+"use client";
 import { Listbox, Transition } from "@headlessui/react";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
+import * as React from "react";
 
 const people = [
   { name: "Wade Cooper" },
@@ -13,7 +13,7 @@ const people = [
 ];
 
 export const SelectInput = () => {
-  const [selected, setSelected] = useState(people[0]);
+  const [selected, setSelected] = React.useState(people[0]);
 
   return (
     <div>
@@ -29,7 +29,7 @@ export const SelectInput = () => {
             </span>
           </Listbox.Button>
           <Transition
-            as={Fragment}
+            as={React.Fragment}
             leave="transition ease-in duration-100"
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
@@ -39,8 +39,7 @@ export const SelectInput = () => {
                 <Listbox.Option
                   key={personIdx}
                   className={({ active }) =>
-                    `relative cursor-default select-none py-2 pl-10 pr-4 hover:cursor-pointer ${
-                      active ? "bg-pink-100 text-slate-12" : "text-slate-10"
+                    `relative cursor-default select-none py-2 pl-10 pr-4 hover:cursor-pointer ${active ? "bg-pink-100 text-slate-12" : "text-slate-10"
                     }`
                   }
                   value={person}
@@ -48,9 +47,8 @@ export const SelectInput = () => {
                   {({ selected }) => (
                     <>
                       <span
-                        className={`block truncate ${
-                          selected ? "font-medium" : "font-normal"
-                        }`}
+                        className={`block truncate ${selected ? "font-medium" : "font-normal"
+                          }`}
                       >
                         {person.name}
                       </span>

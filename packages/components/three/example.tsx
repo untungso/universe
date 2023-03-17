@@ -1,7 +1,6 @@
 "use client";
-
-import * as React from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
+import * as React from "react";
 import * as THREE from "three";
 
 const Box = () => {
