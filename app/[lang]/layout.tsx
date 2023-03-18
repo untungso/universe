@@ -1,17 +1,7 @@
 import "./globals.css";
 import { Montserrat, Roboto_Mono } from "next/font/google";
 
-import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Loader } from "./loader";
-
-export const metadata: Metadata = {
-  title: {
-    default: "Hello World | Malah Ngoding Spaces",
-    template: "%s | Malah Ngoding Spaces",
-  },
-  description: "Lupa Makan, Lupa Tidur, Malah Ngoding",
-};
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -31,10 +21,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       lang="id"
       className={`${montserrat.variable} ${roboto_mono.variable}`}
     >
-      <body>
-        {children}
-        <Loader />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
