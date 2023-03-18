@@ -1,7 +1,7 @@
-import { PrimaryButton } from "@/components/client";
+import { PrimaryButton, SecondaryButton } from "@/components/client";
 import {
   BaseLayout, Heading, InsteadLogo, Paragraph, StyledCode, SubTitle,
-  Title
+  Title,
 } from "@/components/server";
 import { getDictionary, Locale } from "@/utils";
 import Link from "next/link";
@@ -30,9 +30,15 @@ export default async function Root({
       <Paragraph>{dictionary["landing"].first}</Paragraph>
       <StyledCode>Paragraph</StyledCode>
       <Paragraph>{dictionary["landing"].second}</Paragraph>
-      <Link href={`/${lang}/ui-debug`}>
-        <PrimaryButton>{dictionary["landing"].greetings}</PrimaryButton>
-      </Link>
+      <div className="flex flex-col gap-4">
+        <Link href={`/${lang}/explore`}>
+          <PrimaryButton>{dictionary["landing"].greetings}</PrimaryButton>
+        </Link>
+
+        <Link href={`/${lang}/ui-debug`}>
+          <SecondaryButton>UI Debug</SecondaryButton>
+        </Link>
+      </div>
       <FlyingFooter />
     </BaseLayout>
   );
