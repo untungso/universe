@@ -1,6 +1,11 @@
 import { PrimaryButton, SecondaryButton } from "@/components/client";
 import {
-  BaseLayout, Heading, InsteadLogo, Paragraph, StyledCode, SubTitle,
+  BaseLayout,
+  Heading,
+  InsteadLogo,
+  Paragraph,
+  StyledCode,
+  SubTitle,
   Title,
 } from "@/components/server";
 import { getDictionary, Locale } from "@/utils";
@@ -30,7 +35,7 @@ export default async function Root({
       <Paragraph>{dictionary["landing"].first}</Paragraph>
       <StyledCode>Paragraph</StyledCode>
       <Paragraph>{dictionary["landing"].second}</Paragraph>
-      <div className="flex flex-col gap-4">
+      <div className="mt-36 flex flex-col gap-4">
         <Link href={`/${lang}/explore`}>
           <PrimaryButton>{dictionary["landing"].greetings}</PrimaryButton>
         </Link>
@@ -39,17 +44,6 @@ export default async function Root({
           <SecondaryButton>UI Debug</SecondaryButton>
         </Link>
       </div>
-      <FlyingFooter />
     </BaseLayout>
   );
 }
-
-const FlyingFooter = () => {
-  return (
-    <div className="fixed bottom-0 h-8 w-screen">
-      <div className="flex w-full flex-row items-center justify-center">
-        <p className="text-xs">Lupa Makan, Lupa Tidur, Malah Ngoding</p>
-      </div>
-    </div>
-  );
-};

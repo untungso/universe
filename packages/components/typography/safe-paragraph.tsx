@@ -5,7 +5,7 @@ interface TextProps {
 }
 export const SafeParagraph = (props: TextProps) => {
   return (
-    <p className="font-base text-md mb-4 text-justify font-sans leading-relaxed">
+    <p className="font-base mb-4 text-justify font-sans text-base leading-relaxed">
       {props.children}
     </p>
   );

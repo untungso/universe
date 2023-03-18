@@ -24,6 +24,13 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     p: ({ children }) => {
       return <SafeParagraph>{children as string}</SafeParagraph>;
     },
+    a: ({ children }) => {
+      return (
+        <a className="font-base text-base hover:cursor-pointer">
+          {children as string}
+        </a>
+      );
+    },
     ...components,
   };
 }

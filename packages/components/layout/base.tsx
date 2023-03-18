@@ -6,5 +6,11 @@ interface SectionProps {
   className?: string;
 }
 export const BaseLayout = (props: SectionProps) => {
-  return <main className={clsx("md:px-8 px-4 py-4 max-w-[72vh]", props.className)}>{props.children}</main>;
+  return (
+    <main
+      className={clsx("max-w-[720px] px-4 py-4 pb-20 md:px-8", props.className)}
+    >
+      {props.children}
+    </main>
+  );
 };
