@@ -19,8 +19,8 @@ export const NavigationBar = () => {
         <div className="flex flex-col">
           <StyledCode>NavigationMenu</StyledCode>
           <div className="flex flex-row gap-4">
-            <Link href={`/${locale}/ui-debug`}>Token</Link>
-            <Link href={`/${locale}/ui-debug/atom`}>Atom</Link>
+            <Link href={`/${locale}/ui`}>Token</Link>
+            <Link href={`/${locale}/ui/atom`}>Atom</Link>
           </div>
         </div>
       </div>

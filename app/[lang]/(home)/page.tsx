@@ -1,4 +1,4 @@
-import { PrimaryButton, SecondaryButton } from "@/components/client";
+import { PrimaryButton } from "@/components/client";
 import {
   BaseLayout,
   Heading,
@@ -9,7 +9,6 @@ import {
   Title,
 } from "@/components/server";
 import { getDictionary, Locale } from "@/utils";
-import Link from "next/link";
 import LocaleSwitcher from "./locale-switcher";
 
 export default async function Root({
@@ -35,14 +34,8 @@ export default async function Root({
       <Paragraph>{dictionary["landing"].first}</Paragraph>
       <StyledCode>Paragraph</StyledCode>
       <Paragraph>{dictionary["landing"].second}</Paragraph>
-      <div className="mt-36 flex flex-col gap-4">
-        <Link href={`/${lang}/explore`}>
-          <PrimaryButton>{dictionary["landing"].greetings}</PrimaryButton>
-        </Link>
-
-        <Link href={`/${lang}/ui`}>
-          <SecondaryButton>UI Debug</SecondaryButton>
-        </Link>
+      <div className="mb-36 flex flex-col gap-4">
+        <PrimaryButton>{dictionary["landing"].greetings}</PrimaryButton>
       </div>
     </BaseLayout>
   );
