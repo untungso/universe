@@ -40,7 +40,7 @@ export default async function Root({
           <PrimaryButton>{dictionary["landing"].greetings}</PrimaryButton>
         </Link>
 
-        <Link href={`/${lang}/ui-debug`}>
+        <Link href={`/${lang}/ui`}>
           <SecondaryButton>UI Debug</SecondaryButton>
         </Link>
       </div>

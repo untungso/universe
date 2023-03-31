@@ -1,12 +1,16 @@
 import {
   AltButton,
-  CheckBoxInput, Debug, PrimaryButton,
+  CheckBoxInput,
+  Debug,
+  PrimaryButton,
   RadioInput,
-  SecondaryButton, SelectInput, TextInput
+  SecondaryButton,
+  SelectInput,
+  TextInput,
 } from "@/components/client";
 import { BaseLayout, Section, StyledCode, Title } from "@/components/server";
 import { Suspense } from "react";
-import LocaleSwitcher from "../../locale-switcher";
+import LocaleSwitcher from "../../../(home)/locale-switcher";
 import HelloWorld from "./hello.mdx";
 
 import type { Metadata } from "next";
@@ -75,6 +79,6 @@ export default function AtomDebug() {
         <StyledCode>Select</StyledCode>
         <SelectInput />
       </Section>
-    </BaseLayout >
+    </BaseLayout>
   );
 }
