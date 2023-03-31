@@ -5,7 +5,7 @@ export * from "./box/section";
 export * from "./branding/instead-logo";
 export * from "./branding/styled-code";
 // Layout Components
-export * from './layout/base';
+export * from "./layout/base";
 // Typography
 export * from "./typography/title";
 export * from "./typography/sub-title";

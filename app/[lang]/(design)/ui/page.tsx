@@ -1,8 +1,12 @@
 import {
-  BaseLayout, Heading,
+  BaseLayout,
+  Heading,
   InsteadLogo,
-  Paragraph, Section, StyledCode,
-  SubTitle, Title
+  Paragraph,
+  Section,
+  StyledCode,
+  SubTitle,
+  Title,
 } from "@/components/server";
 import { getDictionary, Locale } from "@/utils";
 
