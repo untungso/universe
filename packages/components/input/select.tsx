@@ -34,13 +34,15 @@ export const SelectInput = () => {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Listbox.Options className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-slate-1 py-1 text-base shadow-lg ring-1 ring-slate-12 ring-opacity-5 focus:outline-none sm:text-sm">
+            <Listbox.Options className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-slate-1 py-1 text-base shadow-lg ring-1 ring-slate-12 ring-opacity-5 focus:outline-none dark:bg-slate-12 dark:ring-slate-1 sm:text-sm">
               {people.map((person, personIdx) => (
                 <Listbox.Option
                   key={personIdx}
                   className={({ active }) =>
                     `relative cursor-default select-none py-2 pl-10 pr-4 hover:cursor-pointer ${
-                      active ? "bg-pink-100 text-slate-12" : "text-slate-10"
+                      active
+                        ? "bg-pink-100 text-slate-12 dark:text-slate-1"
+                        : "text-slate-10"
                     }`
                   }
                   value={person}
