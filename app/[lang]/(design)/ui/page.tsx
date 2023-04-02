@@ -47,17 +47,17 @@ export default async function TokenDebug({
       <Section>
         <StyledCode>ColorSlate</StyledCode>
         <div className="mb-4 flex flex-row flex-wrap gap-4">
-          <div className="h-12 w-12 border border-slate-12 bg-slate-1" />
-          <div className="h-12 w-12 border border-slate-12 bg-slate-2" />
-          <div className="h-12 w-12 border border-slate-12 bg-slate-3" />
-          <div className="h-12 w-12 border border-slate-12 bg-slate-4" />
-          <div className="h-12 w-12 border border-slate-12 bg-slate-5" />
-          <div className="h-12 w-12 border border-slate-12 bg-slate-6" />
-          <div className="h-12 w-12 border border-slate-12 bg-slate-8" />
-          <div className="h-12 w-12 border border-slate-12 bg-slate-9" />
-          <div className="h-12 w-12 border border-slate-12 bg-slate-10" />
-          <div className="h-12 w-12 border border-slate-12 bg-slate-11" />
-          <div className="h-12 w-12 border border-slate-12 bg-slate-12" />
+          <div className="h-12 w-12 border border-slate-12 bg-slate-1 dark:border-slate-1" />
+          <div className="h-12 w-12 border border-slate-12 bg-slate-2 dark:border-slate-1" />
+          <div className="h-12 w-12 border border-slate-12 bg-slate-3 dark:border-slate-1" />
+          <div className="h-12 w-12 border border-slate-12 bg-slate-4 dark:border-slate-1" />
+          <div className="h-12 w-12 border border-slate-12 bg-slate-5 dark:border-slate-1" />
+          <div className="h-12 w-12 border border-slate-12 bg-slate-6 dark:border-slate-1" />
+          <div className="h-12 w-12 border border-slate-12 bg-slate-8 dark:border-slate-1" />
+          <div className="h-12 w-12 border border-slate-12 bg-slate-9 dark:border-slate-1" />
+          <div className="h-12 w-12 border border-slate-12 bg-slate-10 dark:border-slate-1" />
+          <div className="h-12 w-12 border border-slate-12 bg-slate-11 dark:border-slate-1" />
+          <div className="h-12 w-12 border border-slate-12 bg-slate-12 dark:border-slate-1" />
         </div>
 
         <StyledCode>ColorBlue</StyledCode>

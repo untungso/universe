@@ -19,11 +19,11 @@ export const SelectInput = () => {
     <div>
       <Listbox value={selected} onChange={setSelected}>
         <div className="relative mt-1">
-          <Listbox.Button className="relative w-full cursor-default rounded-md border-2 border-slate-12 bg-slate-1 py-2 pl-6 pr-10 text-left shadow-md hover:cursor-pointer focus:outline-none focus-visible:border-blue-800 focus-visible:ring-2 focus-visible:ring-slate-1 focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-2 sm:text-sm">
+          <Listbox.Button className="relative w-full cursor-default rounded-md border-2 border-slate-12 bg-slate-1 py-2 pl-6  pr-10 text-left shadow-md hover:cursor-pointer focus:outline-none focus-visible:border-blue-800 focus-visible:ring-2 focus-visible:ring-slate-1 focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-2 dark:border-slate-1 dark:bg-slate-12 sm:text-sm">
             <span className="block truncate">{selected.name}</span>
             <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
               <ChevronUpDownIcon
-                className="h-5 w-5 text-slate-6"
+                className="h-5 w-5 text-slate-6 dark:text-slate-1"
                 aria-hidden="true"
               />
             </span>

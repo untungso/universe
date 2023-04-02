@@ -21,10 +21,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="id"
-      className={`${montserrat.variable} ${roboto_mono.variable}`}
+      className={`${montserrat.variable} ${roboto_mono.variable} bg-slate-1 text-slate-12 dark:bg-slate-12 dark:text-slate-1`}
       suppressHydrationWarning
     >
-      <body className="bg-slate-1 text-slate-12 dark:bg-slate-12 dark:text-slate-1">
+      <body>
         <Providers>{children}</Providers>
       </body>
     </html>
