@@ -9,7 +9,7 @@ export const Debug = (props: DebugProps) => {
   const [shown, setShown] = React.useState<boolean>(false);
   return (
     <div
-      className="relative border border-slate-1 pb-2 transition-colors hover:border-red hover:bg-red-100	"
+      className="relative border border-slate-1 pb-2 transition-colors hover:border-red hover:bg-red-100	dark:hover:bg-red"
       onMouseEnter={() => setShown(true)}
       onMouseLeave={() => setShown(false)}
     >

@@ -1,6 +1,5 @@
 import "./globals.css";
 import { Montserrat, Roboto_Mono } from "next/font/google";
-import { cookies } from "next/headers";
 
 import type { ReactNode } from "react";
 import { Providers } from "./providers";

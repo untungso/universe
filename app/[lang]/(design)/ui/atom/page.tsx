@@ -52,15 +52,17 @@ export default function AtomDebug() {
         <TextInput placeholder="Hello Placeholder Text" />
       </Section>
       <Section>
-        <StyledCode>Radio</StyledCode>
-        <RadioInput
-          name="Programming Language"
-          data={[
-            { label: "Go", key: "go-lang" },
-            { label: "Rust", key: "rust-lang" },
-            { label: "Javasript", key: "js" },
-          ]}
-        />
+        <Debug debugString="<RadioInput/>">
+          <StyledCode>Radio</StyledCode>
+          <RadioInput
+            name="Programming Language"
+            data={[
+              { label: "Go", key: "go-lang" },
+              { label: "Rust", key: "rust-lang" },
+              { label: "Javasript", key: "js" },
+            ]}
+          />
+        </Debug>
       </Section>
       <Section>
         <Debug debugString="<Checkboxes/>">

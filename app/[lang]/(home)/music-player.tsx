@@ -69,7 +69,7 @@ const MusicPlayer = () => {
   return (
     <div className="flex">
       <svg
-        className={`m-4 h-5 w-5 bg-slate-12 ${
+        className={`m-4 h-5 w-5 bg-slate-12 dark:bg-slate-1 ${
           isPlaying ? "motion-safe:animate-spin" : ""
         }`}
         viewBox="0 0 24 24"
@@ -77,10 +77,10 @@ const MusicPlayer = () => {
         {`className`}
       </svg>
       <div className="flex w-40 flex-col justify-center pl-4 text-left">
-        <h3 className="text-md z-50 truncate font-sans font-bold uppercase text-slate-12">
+        <h3 className="text-md z-50 truncate font-sans font-bold uppercase text-slate-12 dark:text-slate-1">
           {sourceObject[sourceIndex].title}
         </h3>
-        <h4 className="0 z-50 truncate font-mono text-xs uppercase text-slate-10">
+        <h4 className="0 z-50 truncate font-mono text-xs uppercase text-slate-10 dark:text-slate-2">
           {sourceObject[sourceIndex].artist}
         </h4>
       </div>
