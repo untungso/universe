@@ -5,7 +5,6 @@ import {
   PrimaryButton,
   RadioInput,
   SecondaryButton,
-  SelectInput,
   TextInput,
 } from "@/components/client";
 import { BaseLayout, Section, StyledCode, Title } from "@/components/server";
@@ -76,10 +75,6 @@ export default function AtomDebug() {
             ]}
           />
         </Debug>
-      </Section>
-      <Section>
-        <StyledCode>Select</StyledCode>
-        <SelectInput />
       </Section>
     </BaseLayout>
   );

@@ -8,5 +8,4 @@ export * from "./button/secondary";
 // Input
 export * from "./input/checkbox";
 export * from "./input/radio";
-export * from "./input/select";
 export * from "./input/text";
