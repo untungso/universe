@@ -10,6 +10,12 @@ import {
 } from "@/components/server";
 import { getDictionary, Locale } from "@/utils";
 import LocaleSwitcher from "./locale-switcher";
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
+
+const ThemeChanger = dynamic(() => import("./theme"), {
+  loading: () => <p>Loading...</p>,
+});
 
 export default async function Root({
   params: { lang },
@@ -20,6 +26,9 @@ export default async function Root({
 
   return (
     <BaseLayout>
+      <Suspense>
+        <ThemeChanger />
+      </Suspense>
       <StyledCode>LocaleSwitcher</StyledCode>
       <LocaleSwitcher />
       <StyledCode>Title</StyledCode>
