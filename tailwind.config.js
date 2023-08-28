@@ -1,21 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: ["./app/**/*.{js,ts,jsx,tsx}", "./packages/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
       slate: {
-        1: '#fcfcfc',
-        2: '#f8f8f8',
-        3: '#f3f3f3',
-        4: '#ededed',
-        5: '#e8e8e8',
-        6: '#e2e2e2',
-        7: '#dbdbdb',
-        8: '#c7c7c7',
-        9: '#8f8f8f',
-        10: '#858585',
-        11: '#6f6f6f',
-        12: '#171717',
+        1: "#fcfcfc",
+        2: "#f8f8f8",
+        3: "#f3f3f3",
+        4: "#ededed",
+        5: "#e8e8e8",
+        6: "#e2e2e2",
+        7: "#dbdbdb",
+        8: "#c7c7c7",
+        9: "#8f8f8f",
+        10: "#858585",
+        11: "#6f6f6f",
+        12: "#171717",
       },
       blue: {
         DEFAULT: "#1947E6",

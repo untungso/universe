@@ -5,6 +5,7 @@ import { useTheme } from "next-themes";
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
+  const [cycle, setCycle] = useState(0);
 
   // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
@@ -15,12 +16,25 @@ const ThemeSwitch = () => {
     return null;
   }
 
+  const handleThemeCycle = () => {
+    if (cycle === 0) {
+      setTheme("system");
+      setCycle(1);
+    } else if (cycle === 1) {
+      setTheme("light");
+      setCycle(2);
+    } else {
+      setTheme("dark");
+      setCycle(0);
+    }
+  };
+
   return (
-    <select value={theme} onChange={(e) => setTheme(e.target.value)}>
-      <option value="system">System</option>
-      <option value="dark">Dark</option>
-      <option value="light">Light</option>
-    </select>
+    <>
+      <button onClick={handleThemeCycle}>
+        {theme} {cycle}
+      </button>
+    </>
   );
 };
 

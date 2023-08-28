@@ -15,6 +15,7 @@ import { Suspense } from "react";
 
 const ThemeChanger = dynamic(() => import("./theme"), {
   loading: () => <p>Loading...</p>,
+  ssr: false,
 });
 
 export default async function Root({
@@ -26,6 +27,7 @@ export default async function Root({
 
   return (
     <BaseLayout>
+      <StyledCode>ThemeSwitcher</StyledCode>
       <Suspense>
         <ThemeChanger />
       </Suspense>

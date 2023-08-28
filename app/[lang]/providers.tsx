@@ -8,5 +8,5 @@ interface ProvidersProps {
 }
 
 export function Providers(props: ProvidersProps) {
-  return <ThemeProvider>{props.children}</ThemeProvider>;
+  return <ThemeProvider attribute="class">{props.children}</ThemeProvider>;
 }

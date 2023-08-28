@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --slate1: #fbfcfd;
-  --slate2: #f8f9fa;
-  --slate10: #7e868c;
-  --slate12: #11181c;
+  --slate1: #fcfcfc;
+  --slate2: #f8f8f8;
+  --slate11: #6f6f6f;
+  --slate12: #171717;
 }
 
 ::selection {
@@ -16,7 +16,12 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: var(--slate2);
+  background-color: var(--slate1);
+}
+
+html.dark {
+  scroll-behavior: smooth;
+  background-color: var(--slate12);
 }
 
 video::-webkit-media-controls {
@@ -33,7 +38,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--slate10);
+  background: var(--slate11);
 }
 
 body::-webkit-scrollbar-thumb:hover {
