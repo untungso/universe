@@ -1,4 +1,7 @@
 import { Suspense } from "react";
+import { Card } from "./cards";
+import { hearts, spades, clubs, diamonds, etc } from "./data";
+import { GameView } from "./game";
 
 export const metadata = {
   title: "Explore",
@@ -6,51 +9,74 @@ export const metadata = {
 };
 
 export default function ExplorePage() {
-  const arr = Array.from(Array(56).keys());
-
   return (
     <Suspense>
-      <h1>Explore</h1>
-      <div className="flex flex-row flex-wrap items-start justify-start gap-3">
-        {arr.map((item) => {
-          return (
-            <Card
-              key={item}
-              name="Test 1"
-              assets={`/assets/1X/${item < 10 ? `0${item}` : item}.png`}
-              scale={1.5}
-            />
-          );
-        })}
+      <GameView />
+      <div>
+        <h1 className="my-3 text-3xl">Hearts</h1>
+        <div className="flex flex-row flex-wrap items-start justify-start gap-3">
+          {hearts.map((item) => {
+            return (
+              <div key={item.name}>
+                <p className="text-sm font-bold">{item.name}</p>
+                <Card name="Test 1" assets={item.assets} scale={1.5} />
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div>
+        <h1 className="my-3 text-3xl">Spades</h1>
+        <div className="flex flex-row flex-wrap items-start justify-start gap-3">
+          {spades.map((item) => {
+            return (
+              <div key={item.name}>
+                <p className="text-sm font-bold">{item.name}</p>
+                <Card name="Test 1" assets={item.assets} scale={1.5} />
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div>
+        <h1 className="my-3 text-3xl">Diamonds</h1>
+        <div className="flex flex-row flex-wrap items-start justify-start gap-3">
+          {diamonds.map((item) => {
+            return (
+              <div key={item.name}>
+                <p className="text-sm font-bold">{item.name}</p>
+                <Card name="Test 1" assets={item.assets} scale={1.5} />
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div>
+        <h1 className="my-3 text-3xl">Clubs</h1>
+        <div className="flex flex-row flex-wrap items-start justify-start gap-3">
+          {clubs.map((item) => {
+            return (
+              <div key={item.name}>
+                <p className="text-sm font-bold">{item.name}</p>
+                <Card name="Test 1" assets={item.assets} scale={1.5} />
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div>
+        <h1 className="my-3 text-3xl">ETC</h1>
+        <div className="flex flex-row flex-wrap items-start justify-start gap-3">
+          {etc.map((item) => {
+            return (
+              <div key={item.name}>
+                <p className="text-sm font-bold">{item.name}</p>
+                <Card name="Test 1" assets={item.assets} scale={1.5} />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </Suspense>
   );
 }
-
-/*
-
-
-*/
-import Image from "next/image";
-
-interface CardProps {
-  name: string;
-  assets: string;
-  scale: number;
-}
-
-export const Card = (props: CardProps) => {
-  return (
-    <div>
-      <Image
-        src={props.assets}
-        alt={props.name}
-        height={126 * props.scale}
-        width={90 * props.scale}
-        style={{ width: 90 * props.scale, height: 126 * props.scale }}
-        className="rendering-pixelated border-2 border-slate-12 dark:border-slate-1"
-        quality={100}
-      />
-    </div>
-  );
-};
