@@ -9,8 +9,9 @@ import {
 } from "@/components/client";
 import { BaseLayout, Section, StyledCode, Title } from "@/components/server";
 import { Suspense } from "react";
-import LocaleSwitcher from "../../../(home)/locale-switcher";
+import LocaleSwitcher from "@/components/magic/locale-switcher";
 import HelloWorld from "./hello.mdx";
+import dynamic from "next/dynamic";
 
 import type { Metadata } from "next";
 
@@ -18,6 +19,11 @@ export const metadata: Metadata = {
   title: "[Atom] UI Debug",
   description: "Lupa Makan, Lupa Tidur, Malah Ngoding",
 };
+
+const ThemeChanger = dynamic(() => import("@/components/magic/theme"), {
+  loading: () => <p className="my-3 font-mono">Loading...</p>,
+  ssr: false,
+});
 
 export default function AtomDebug() {
   return (
@@ -33,6 +39,12 @@ export default function AtomDebug() {
         <StyledCode>LocaleSwitcher</StyledCode>
         <Suspense>
           <LocaleSwitcher />
+        </Suspense>
+      </Section>
+      <Section>
+        <StyledCode>ThemeChanger</StyledCode>
+        <Suspense>
+          <ThemeChanger />
         </Suspense>
       </Section>
       <Section>
