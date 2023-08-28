@@ -44,3 +44,9 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
   background: var(--slate12);
 }
+
+.rendering-pixelated {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
