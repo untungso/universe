@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Loader } from "./loader";
+import { Loader } from "@/components/magic/loader";
 
 export const metadata: Metadata = {
   title: {

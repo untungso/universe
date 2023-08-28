@@ -1,4 +1,5 @@
 import { PrimaryButton } from "@/components/client";
+import LocaleSwitcher from "@/components/magic/locale-switcher";
 import {
   BaseLayout,
   Heading,
@@ -9,12 +10,11 @@ import {
   Title,
 } from "@/components/server";
 import { getDictionary, Locale } from "@/utils";
-import LocaleSwitcher from "./locale-switcher";
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
 
-const ThemeChanger = dynamic(() => import("./theme"), {
-  loading: () => <p>Loading...</p>,
+const ThemeChanger = dynamic(() => import("@/components/magic/theme"), {
+  loading: () => <p className="my-3 font-mono">Loading...</p>,
   ssr: false,
 });
 

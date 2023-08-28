@@ -31,8 +31,8 @@ const ThemeSwitch = () => {
 
   return (
     <>
-      <button onClick={handleThemeCycle}>
-        {theme} {cycle}
+      <button className="my-3 font-mono underline " onClick={handleThemeCycle}>
+        {theme}
       </button>
     </>
   );

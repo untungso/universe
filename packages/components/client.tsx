@@ -9,3 +9,7 @@ export * from "./button/secondary";
 export * from "./input/checkbox";
 export * from "./input/radio";
 export * from "./input/text";
+// Magic
+export * from "./magic/locale-switcher";
+export * from "./magic/theme";
+export * from "./magic/music-player";

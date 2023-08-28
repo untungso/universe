@@ -19,8 +19,24 @@ export const NavigationBar = () => {
         <div className="flex flex-col">
           <StyledCode>NavigationMenu</StyledCode>
           <div className="flex flex-row gap-4">
-            <Link href={`/${locale}/ui`}><span className="text-xs text-slate-2 dark:text-slate-10 mr-3">01</span>Token</Link>
-            <Link href={`/${locale}/ui/atom`}><span className="text-xs text-slate-2 dark:text-slate-10 mr-3">02</span>Atom</Link>
+            <Link href={`/${locale}/ui`}>
+              <span className="mr-3 text-xs text-slate-2 dark:text-slate-10">
+                01
+              </span>
+              Token
+            </Link>
+            <Link href={`/${locale}/ui/atom`}>
+              <span className="mr-3 text-xs text-slate-2 dark:text-slate-10">
+                02
+              </span>
+              Atom
+            </Link>
+            <Link href={`/${locale}/ui/explore`}>
+              <span className="mr-3 text-xs text-slate-2 dark:text-slate-10">
+                03
+              </span>
+              Explore
+            </Link>
           </div>
         </div>
       </div>
