@@ -32,9 +32,6 @@ export default function AtomDebug() {
         <StyledCode>UiDebug</StyledCode>
         <Title>Atom</Title>
       </Section>
-      <Section className="prose lg:prose-xl">
-        <HelloWorld />
-      </Section>
       <Section>
         <StyledCode>LocaleSwitcher</StyledCode>
         <Suspense>
@@ -60,33 +57,35 @@ export default function AtomDebug() {
       </Section>
       <Section>
         <StyledCode>Input</StyledCode>
-        <TextInput placeholder="Hello Placeholder Text" />
+        <div className="flex flex-col items-start justify-start gap-6">
+          <TextInput placeholder="Hello Placeholder Text" />
+          <Debug debugString="<RadioInput/>">
+            <StyledCode>Radio</StyledCode>
+            <RadioInput
+              name="Programming Language"
+              data={[
+                { label: "Go", key: "go-lang" },
+                { label: "Rust", key: "rust-lang" },
+                { label: "Javasript", key: "js" },
+              ]}
+            />
+          </Debug>
+          <Debug debugString="<Checkboxes/>">
+            <StyledCode>Checkboxes</StyledCode>
+            <CheckBoxInput
+              name="Nicest Chips"
+              data={[
+                { label: "Walker", key: "walker" },
+                { label: "Tyler's", key: "tylers" },
+                { label: "Chitato", key: "chitato" },
+              ]}
+            />
+          </Debug>
+        </div>
       </Section>
-      <Section>
-        <Debug debugString="<RadioInput/>">
-          <StyledCode>Radio</StyledCode>
-          <RadioInput
-            name="Programming Language"
-            data={[
-              { label: "Go", key: "go-lang" },
-              { label: "Rust", key: "rust-lang" },
-              { label: "Javasript", key: "js" },
-            ]}
-          />
-        </Debug>
-      </Section>
-      <Section>
-        <Debug debugString="<Checkboxes/>">
-          <StyledCode>Checkboxes</StyledCode>
-          <CheckBoxInput
-            name="Nicest Chips"
-            data={[
-              { label: "Walker", key: "walker" },
-              { label: "Tyler's", key: "tylers" },
-              { label: "Chitato", key: "chitato" },
-            ]}
-          />
-        </Debug>
+      <br />
+      <Section className="prose lg:prose-xl">
+        <HelloWorld />
       </Section>
     </BaseLayout>
   );

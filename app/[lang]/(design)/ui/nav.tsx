@@ -20,19 +20,19 @@ export const NavigationBar = () => {
           <StyledCode>NavigationMenu</StyledCode>
           <div className="flex flex-row gap-4">
             <Link href={`/${locale}/ui`}>
-              <span className="mr-3 text-xs text-slate-2 dark:text-slate-10">
+              <span className="mr-3 text-xs text-slate-10 dark:text-slate-2">
                 01
               </span>
               Token
             </Link>
             <Link href={`/${locale}/ui/atom`}>
-              <span className="mr-3 text-xs text-slate-2 dark:text-slate-10">
+              <span className="mr-3 text-xs text-slate-10 dark:text-slate-2">
                 02
               </span>
               Atom
             </Link>
             <Link href={`/${locale}/ui/explore`}>
-              <span className="mr-3 text-xs text-slate-2 dark:text-slate-10">
+              <span className="mr-3 text-xs text-slate-10 dark:text-slate-2">
                 03
               </span>
               Explore

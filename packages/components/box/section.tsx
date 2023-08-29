@@ -6,5 +6,5 @@ interface SectionProps {
   className?: string;
 }
 export const Section = (props: SectionProps) => {
-  return <div className={clsx("px-6", props.className)}>{props.children}</div>;
+  return <div className={clsx("pxy-3", props.className)}>{props.children}</div>;
 };

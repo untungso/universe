@@ -1,4 +1,3 @@
-import { BaseLayout } from "@/components/server";
 import { Card } from "@/playground/minor-arcana/cards";
 import {
   hearts,
@@ -10,7 +9,7 @@ import {
 
 export default function MinorArcanaPage() {
   return (
-    <BaseLayout>
+    <>
       <div>
         <h1 className="my-3 text-3xl">Hearts</h1>
         <div className="flex flex-row flex-wrap items-start justify-start gap-3">
@@ -76,6 +75,6 @@ export default function MinorArcanaPage() {
           })}
         </div>
       </div>
-    </BaseLayout>
+    </>
   );
 }
